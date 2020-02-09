@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">socket_json</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+	<string name="user">账号：</string>
+    <string name="Password">密码：</string>
+    <string name="login">登录</string>
+    <string name="enroll">注册</string>
+    <string name="welconlogin">智慧生活，从这里出发!</string>
+    <string name="useredittext">请输入账号</string>
+    <string name="passwordedittext">请输入密码</string>
+    <!--网络参数配置中使用的String  -->
+    <string name="Ipedittext">请输入目标Ip地址</string>
+    <string name="Portedittext">请输入目标端口号</string>
+    <string name="setsocket">准备修改</string>
+    <string name="textIp">IP:</string>
+    <string name="textPort">端口号:</string>
+    <string name="configurationsocket">网络参数配置:</string>  
+    <string name="enter">回主菜单</string>
+    <string name="over">完成修改</string>
+    <string name="textViewConfigurationBoardNumberString">板号配置:</string>
+    <string name="textViewConfigurationTempBoardNumberString">温度:</string>  
+    <string name="textViewConfigurationHumidityBoardNumberString">湿度:</string>
+    <string name="textViewConfigurationSpotlightBoardNumberString">射灯:</string>  
+    <string name="textViewConfigurationVentilatorBoardNumberString">换气扇:</string>
+    <string name="textViewConfigurationWarningLightsBoardNumberString">报警灯:</string>
+    <string name="textViewConfigurationCurtainBoardNumberString">窗帘:</string>
+    <string name="textViewConfigurationEntranceGuardBoardNumberString">门禁:</string>
+    <string name="textViewConfigurationSmokeSensorBoardNumberString">烟雾:</string>
+    <string name="textViewConfigurationTVBoardNumberString">电视:</string>
+    <string name="textViewConfigurationAirConditioningBoardNumberString">空调:</string>
+    <string name="LED">LED控制:</string>
+    <string name="textViewConfigurationIlluminationBoardNumberString">光照度:</string>
+    <string name="confirm_change">确认修改</string>
+    <!-- 修改密码中使用的String -->
+    <string name="oldusermanagepasswordedittext">请输入旧密码</string>
+    <string name="newPassword">新密码：</string>
+    <string name="newpasswordedittext">请输入新密码</string>
+    <string name="confirmnewusermanageViewPassword">确认新密码:</string>
+    <string name="confirmnewpasswordedittext">请再次输入新密码</string>
+    <string name="oldpassword">旧密码：</string>
+    <string name="usermanageconfirm">确认修改</string>
+    <!-- 数据参数和发送界面 -->
+    <string name="textViewTempString">温度:</string>
+    <string name="edittextTempString">此控件用于显示温度值</string>
+    <string name="textViewHumidityString">湿度:</string>
+    <string name="edittextHumidityString">此控件用于显示湿度值</string>
+    <string name="textViewIlluminationString">光照:</string>
+    <string name="edittextIlluminationString">此控件用于显示光照值</string>
+    <string name="textViewEnvironmentalParametersString">采集参数:</string>
+	<string name="textViewSmokeString">烟雾探测:</string>
+	<string name="numb_led">数码管控制:</string>
+	<string name="stop">暂停</string>
+	<string name="step_motor">步进电机控制:</string>
+	<string name="help">求\n助:</string>
+	<string name="relay">继电器控制:</string>
+	<string name="edittextmanString">此控件用于显示是否有人</string>
+	<string name="man">人体红外感应:</string>
+	<string name="edittextsmokeString">此控件用于显示烟雾值</string>
+	<string name="current_motor">直流电机控制:</string>
+	<string name="controlString">电器控制:</string>
+	<string name="edittext_numb">数码管值</string>  
+	
+	
+	<string-array name="learn"> 
+	    		<item>学习</item>
+				<item>发送</item> 
+    </string-array>
+    <string-array name="Channel"> 
+        		<item>0</item>
+				<item>1</item>
+				<item>2</item> 
+				<item>3</item>
+				<item>4</item> 
+				<item>5</item>
+				<item>6</item> 
+    </string-array>
+    <string name="error_configuration">Please configure your serial port first.</string>
+    <string name="error_security">You do not have read/write permission to the serial</string>
+    <string name="error_unknown">The serial port can not be opened for an unknown</string>
+    <string name="confirmpassword">确认密码：</string>
+    <string name="security_code">管理员密码：</string>
+    <string name="this_security_code">请输入管理员密码</string>
+    <string name="start">开启</string>
+    <string name="numb_set">设置</string>
+    <string name="close">关闭</string>
+    <string name="edittext_step">设置转的角度</string>
+    <string name="edittexthelpString">此控件用于显示是否求助</string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:text="加载完毕，请登录。。。。"/>
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名："/>
+    <EditText 
+        android:id="@+id/username_et"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="端口号："/>
+    <EditText 
+        android:id="@+id/port_et"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP地址："/>
+    <EditText 
+        android:id="@+id/ip_et"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码："/>
+    <EditText 
+        android:id="@+id/password_et"
+        android:layout_width="150dp"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+<Button 
+    android:id="@+id/btn_login"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="登录"/>
+<TextView 
+    android:id="@+id/time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+</LinearLayout>

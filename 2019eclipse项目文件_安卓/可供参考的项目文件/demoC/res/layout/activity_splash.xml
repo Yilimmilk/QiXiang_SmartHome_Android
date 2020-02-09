@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/ic_3301"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView android:layout_width="100dp"
+        android:text="欢迎您使用智能家居系统......."
+        android:layout_alignParentRight="true"
+        android:textColor="#fff"
+         android:ellipsize="marquee"
+         android:textSize="18sp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+
+        android:layout_height="wrap_content"/>
+<ProgressBar 
+    android:id="@+id/progress"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="match_parent"
+    android:max="100"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:layout_marginTop="150dp"
+    android:progressDrawable="@drawable/progressbar_bg"
+    android:layout_centerInParent="true"
+    android:layout_height="30dp"/>
+
+<TextView 
+    android:id="@+id/tv_progress"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="70dp"
+    android:layout_marginRight="70dp"
+    android:textSize="18sp"
+    android:textColor="#FF0000"
+    android:layout_below="@+id/progress"
+    android:text="正在加载串口配置..........."
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+</RelativeLayout>

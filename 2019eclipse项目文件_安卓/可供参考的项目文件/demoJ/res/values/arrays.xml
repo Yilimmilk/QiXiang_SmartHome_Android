@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+       <string-array name="letter">
+        <item>温度</item>
+        <item>湿度</item>
+        <item>烟雾</item>
+        <item>燃气</item>
+        <item>光照</item>
+        <item>气压</item>
+        <item>Co2</item>
+         <item>PM2.5</item>
+          <item>人体</item>
+           <item>全部</item>
+    </string-array>
+    
+</resources>

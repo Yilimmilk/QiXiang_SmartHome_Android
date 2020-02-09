@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinkActivity" >
+
+    <TextView
+        android:id="@+id/tv_roomnum_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="房号:0000"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_roomnum_center"
+        android:layout_marginTop="143dp" >
+
+        <CheckBox
+            android:id="@+id/cb_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:textColor="#fefefe" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginLeft="70dp" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当" />
+
+            <Spinner
+                android:id="@+id/sp_1_1"
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/select_1_1" />
+
+            <Spinner
+                android:id="@+id/sp_1_2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.48"
+                android:entries="@array/select_1_2" />
+
+            <EditText
+                android:id="@+id/et_num1"
+                android:layout_width="61dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:text="0" />
+
+            <Spinner
+                android:id="@+id/sp_1_3"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.74"
+                android:entries="@array/select_1_3" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

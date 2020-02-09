@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/ic_3302"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+ <LinearLayout 
+     android:layout_width="200dp"
+     android:layout_height="match_parent"
+     android:orientation="vertical">
+     <TextView android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:textSize="18sp"
+           android:textColor="#fff"
+           android:layout_marginLeft="20dp"
+         android:text="数据采集："/>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+              android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="温度：" />
+
+        <TextView
+             android:id="@+id/temp_tv"
+            android:layout_width="150dp"
+            android:gravity="center"
+              android:textColor="#ff0000"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="wrap_content"
+           android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+          android:layout_marginLeft="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:textColor="#fff"
+            android:text="湿度：" />
+
+             <TextView
+             android:id="@+id/humidity_tv"
+            android:layout_width="150dp"
+            android:gravity="center"
+              android:textColor="#ff0000"
+            android:layout_height="wrap_content" />
+      
+    </LinearLayout>
+      <LinearLayout
+        android:layout_width="wrap_content"
+          android:layout_marginLeft="20dp"
+             android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+              android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="烟雾：" />
+   <TextView
+             android:id="@+id/smoke_tv"
+            android:layout_width="150dp"
+            android:gravity="center"
+              android:textColor="#ff0000"
+            android:layout_height="wrap_content" />
+     
+    </LinearLayout>
+      <LinearLayout
+        android:layout_width="wrap_content"
+          android:layout_marginLeft="20dp"
+            android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+              android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="燃气：" />
+   <TextView
+             android:id="@+id/gas_tv"
+            android:layout_width="150dp"
+            android:gravity="center"
+              android:textColor="#ff0000"
+            android:layout_height="wrap_content" />
+    
+    </LinearLayout>
+      <LinearLayout
+        android:layout_width="wrap_content"
+            android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+          android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+              android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="光照：" />
+   <TextView
+             android:id="@+id/illumination_tv"
+            android:layout_width="150dp"
+            android:gravity="center"
+              android:textColor="#ff0000"
+            android:layout_height="wrap_content" />
+     
+    </LinearLayout>
+      <LinearLayout
+        android:layout_width="wrap_content"
+             android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+          android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+              android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="气压：" />
+   <TextView
+             android:id="@+id/pressure_tv"
+            android:layout_width="150dp"
+            android:gravity="center"
+              android:textColor="#ff0000"
+            android:layout_height="wrap_content" />
+      
+    </LinearLayout>
+      <LinearLayout
+        android:layout_width="wrap_content"
+          android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+               android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+              android:textColor="#fff"
+            android:text="Co2：" />
+<TextView
+             android:id="@+id/co2_tv"
+            android:layout_width="150dp"
+            android:gravity="center"
+              android:textColor="#ff0000"
+            android:layout_height="wrap_content" />
+     
+    </LinearLayout>
+      <LinearLayout
+        android:layout_width="wrap_content"
+          android:layout_marginLeft="20dp"
+           android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+              android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="Pm2.5：" />
+<TextView
+             android:id="@+id/pm25_tv"
+            android:layout_width="150dp"
+            android:gravity="center"
+              android:textColor="#ff0000"
+            android:layout_height="wrap_content" />
+     
+    </LinearLayout>
+      <LinearLayout
+        android:layout_width="wrap_content"
+          android:layout_marginLeft="20dp"
+             android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+              android:textColor="#fff"
+            android:text="人体红外：" />
+<TextView
+             android:id="@+id/stateHumanInfrared_tv"
+            android:layout_width="150dp"
+            android:gravity="center"
+              android:textColor="#ff0000"
+            android:layout_height="wrap_content" />
+      
+    </LinearLayout>
+ </LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:textSize="18sp"
+           android:textColor="#fff"
+           android:layout_marginLeft="20dp"
+         android:text="电器控制："/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+              android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="窗帘：" />
+
+        <ToggleButton
+            android:id="@+id/tb_curtain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+              android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="报警灯：" />
+
+        <ToggleButton
+            android:id="@+id/tb_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+              android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="射灯1：" />
+
+        <ToggleButton
+            android:id="@+id/tb_lamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+              android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="射灯2：" />
+
+        <ToggleButton
+               android:id="@+id/tb_lamp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+              android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="风扇：" />
+
+        <ToggleButton
+            android:id="@+id/tb_fan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+              android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="门禁：" />
+
+        <ToggleButton
+            android:id="@+id/tb_door"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+              android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="红外发射：" />
+<EditText 
+    android:id="@+id/et"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:text="发射"
+            android:layout_height="wrap_content"
+             />
+
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

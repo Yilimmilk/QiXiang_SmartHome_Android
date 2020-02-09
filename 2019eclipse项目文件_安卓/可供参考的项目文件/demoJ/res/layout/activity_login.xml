@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/tv_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="152dp"
+        android:textColor="@android:color/white"
+        android:text="IP地址："
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_ip"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        android:textColor="@android:color/white"
+        android:layout_toRightOf="@+id/tv_ip"/>
+    <Button
+        android:id="@+id/btn_sql"
+        android:layout_width="150dp"
+        android:layout_marginLeft="20dp"
+         android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_ip"
+        android:layout_toRightOf="@+id/btn_login"
+         android:textColor="@android:color/white"
+        android:text="查看数据库" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+             android:layout_marginLeft="280dp"
+        android:layout_below="@+id/et_ip"
+        android:textColor="@android:color/white"
+       
+        android:text="登录" />
+
+
+
+</RelativeLayout>

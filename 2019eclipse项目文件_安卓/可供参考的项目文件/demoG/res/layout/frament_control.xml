@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp">
+
+     
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_login_et"
+            android:orientation="horizontal">
+<ImageView 
+    android:layout_width="40dp"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/ic_7310"
+    android:layout_height="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="报警灯"
+                    android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        
+            <Switch
+                android:id="@+id/tb_alarm"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+     
+      <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_login_et"
+            android:orientation="horizontal">
+<ImageView 
+    android:layout_width="40dp"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/ic_7303"
+    android:layout_height="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="门禁控制"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        
+            <Switch
+                android:id="@+id/tb_door"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal">
+<LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_login_et"
+            android:orientation="horizontal">
+<ImageView 
+    android:layout_width="40dp"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/ic_7305"
+    android:layout_height="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="风扇"
+                    android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        
+            <Switch
+                android:id="@+id/tb_fan"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+       <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_login_et"
+            android:orientation="horizontal">
+<ImageView 
+    android:layout_width="40dp"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/ic_7307"
+    android:layout_height="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="射灯"
+                    android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        
+            <Switch
+                android:id="@+id/tb_lamp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        
+
+  
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+         android:orientation="horizontal"
+         android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_login_et"
+            android:orientation="horizontal">
+<ImageView 
+    android:layout_width="40dp"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/ic_7302"
+    android:layout_height="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="窗帘"
+                    android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        
+            <TextView
+                android:id="@+id/curtain_open"
+                android:layout_width="wrap_content"
+                android:padding="15dp"
+                android:text="开"
+                android:layout_height="wrap_content" />
+            <TextView
+                   android:id="@+id/curtain_close"
+                android:layout_width="wrap_content"
+                android:text="关"
+                 android:padding="15dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/curtain_stop"
+                android:layout_width="wrap_content"
+                android:text="停"
+                 android:padding="15dp"
+                android:layout_height="wrap_content" />
+            
+        </LinearLayout>
+<LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+                   android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/shape_login_et"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红外发射"
+                    android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        <EditText 
+            android:id="@+id/et"
+            android:layout_width="100dp"
+            android:background="#fff"
+            android:textColor="#000"
+            android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:text="发射"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

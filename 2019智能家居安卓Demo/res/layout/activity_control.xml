@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/logo_img"
+        android:layout_width="171dp"
+        android:layout_height="40dp"
+        android:background="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/sensor_rl"
+        android:layout_width="171dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/logo_img"
+        android:background="@drawable/tab_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/temp_rl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/collection_thermometer"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="温度"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/temp_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/input_box"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="°C"
+                android:textColor="@color/symbolColor"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/br" />
+
+        <RelativeLayout
+            android:id="@+id/humidity_rl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/collection_dropsofwater"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="湿度"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/humidity_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/input_box"
+                android:gravity="center"
+            android:padding="5dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="%"
+                android:textColor="@color/symbolColor"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/br" />
+
+        <RelativeLayout
+            android:id="@+id/gas_rl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/collection_gas"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="燃气"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/gas_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/input_box"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="nm3"
+                android:textColor="@color/symbolColor"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/br" />
+
+        <RelativeLayout
+            android:id="@+id/illumination_rl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/collection_light"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="光照度"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/illumination_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/input_box"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="Lux"
+                android:textColor="@color/symbolColor"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/br" />
+
+        <RelativeLayout
+            android:id="@+id/pm25_rl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/collection_pm25"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="Pm2.5"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/pm25_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/input_box"
+                android:gravity="center"
+               android:padding="5dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:text="μg/m3"
+                android:textColor="@color/symbolColor"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/br" />
+
+        <RelativeLayout
+            android:id="@+id/pressure_rl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/collection_pressure"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="气压"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/pressure_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/input_box"
+                android:gravity="center"
+              android:padding="5dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:text="pa"
+                android:textColor="@color/symbolColor"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/br" />
+
+        <RelativeLayout
+            android:id="@+id/smoke_rl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/collection_smoke"
+                android:drawablePadding="5dp"
+                android:text="烟雾"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/smoke_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/input_box"
+                android:gravity="center"
+               android:padding="5dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="ppm"
+                android:textColor="@color/symbolColor"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/br" />
+
+        <RelativeLayout
+            android:id="@+id/c02_rl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/collection_co2"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="C02"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/c02_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35dp"
+                android:background="@drawable/input_box"
+                android:gravity="center"
+               android:padding="5dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="ppm"
+                android:textColor="@color/symbolColor"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/br" />
+
+        <RelativeLayout
+            android:id="@+id/stateHumanInfrared_rl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/collection_infrared_detector"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="人体红外"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/stateHumanInfrared_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="无人"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@+id/rl"
+        android:layout_toRightOf="@+id/logo_img"
+        android:background="@drawable/top"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="191dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/top2"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/lamp_cb"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/lamp_unpressed"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/door_cb"
+          android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/door_control_unpressed"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/wind_speed_cb"
+           android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/wind_speed_unpressed"
+            android:button="@null" />
+
+        <CheckBox
+            android:id="@+id/alarm_cb"
+          android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/alarm_unpressed"
+            android:button="@null" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/curtain_rl"
+        android:layout_width="191dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rl"
+        android:orientation="vertical"
+        android:background="@drawable/curtain_bg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="红外遥控"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/infrared_ll"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/channe1_cb"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:background="@drawable/channe1_cb"
+                android:button="@null"
+                android:checked="false" />
+
+            <CheckBox
+                android:id="@+id/channe2_cb"
+              android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/channe2_cb"
+                android:button="@null" />
+
+            <CheckBox
+                android:id="@+id/channe3_cb"
+               android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:background="@drawable/channe3_cb"
+                android:button="@null" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="窗帘"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/curtain_open"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/curtain_open_unpressed"
+                />
+
+            <ImageView
+                android:id="@+id/curtain_stop"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/curtain_stop_unpressed"
+                />
+
+            <ImageView
+                android:id="@+id/curtain_close"
+                 android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/curtain_close_unpressed"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/scene_rl"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/logo_img"
+        android:background="@drawable/profiles_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="情景模式"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <CheckBox
+            android:id="@+id/illumination_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:button="@drawable/scene_cb"
+            android:paddingLeft="25dp"
+            android:text="光照模式"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/temp_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+           android:layout_centerHorizontal="true"
+            android:button="@drawable/scene_cb"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:text="温度模式"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/security_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+           android:layout_marginTop="25dp"
+            android:button="@drawable/scene_cb"
+            android:paddingLeft="25dp"
+            android:text="安防模式"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/leavehome_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:button="@drawable/scene_cb"
+            android:paddingLeft="25dp"
+            android:text="离家模式"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/sleep_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+           android:layout_centerHorizontal="true"
+            android:button="@drawable/scene_cb"
+            android:paddingLeft="25dp"
+            android:text="睡眠模式"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/getup_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="20dp"
+            android:button="@drawable/scene_cb"
+            android:paddingLeft="25dp"
+            android:text="起床模式"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/et_dia_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入账号"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_dia_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/et_dia_repass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请再次输入密码"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/et_dia_secpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="请输入二级密码"
+        android:ems="10" />
+
+</LinearLayout>

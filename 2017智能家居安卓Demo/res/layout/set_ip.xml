@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:drawablePadding="3.0dip"
+        android:gravity="center_vertical"
+        android:padding="7.0dip"
+        android:text="端口号："
+        android:textColor="?android:attr/textColorPrimaryDisableOnly"
+        android:textSize="18.0sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editport"
+            android:layout_width="120pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="number" 
+            android:background="@drawable/shape">
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:text="IP地址："
+        android:textColor="?android:attr/textColorPrimaryDisableOnly"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editip"
+            android:layout_width="120pt"
+            android:layout_height="20pt"
+            android:layout_weight="1"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="number" 
+            android:background="@drawable/shape"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置" />
+
+</LinearLayout>

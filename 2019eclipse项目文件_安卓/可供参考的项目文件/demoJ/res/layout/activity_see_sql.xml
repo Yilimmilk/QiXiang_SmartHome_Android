@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bacgound2"
+    tools:context=".SeeSqlActivity" >
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="43dp"
+        android:layout_toRightOf="@+id/lockview" >
+    </ListView>
+
+    <com.example.fffff.JiuGongGeLock
+        android:id="@+id/lockview"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="114dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="80dp"
+          android:layout_toRightOf="@+id/lockview" 
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="43dp"
+        android:layout_marginTop="30dp"
+        android:entries="@array/letter"
+        android:layout_below="@+id/listView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_toRightOf="@+id/lockview" 
+        android:layout_below="@+id/spinner"
+             android:layout_marginLeft="43dp"
+        android:textColor="@android:color/white"
+        android:text="查找" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sensor">
+     <item>温度</item>  
+    <item>光照</item>   
+    <item>湿度</item>  
+    </string-array>
+     <string-array name="condition">
+     <item>&#062;</item>  
+     <item>&#060;&#061;</item>    
+    </string-array>
+</resources>

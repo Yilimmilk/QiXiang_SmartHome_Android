@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+<RadioGroup 
+    android:id="@+id/rg_statistics"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+
+    <RadioButton 
+        android:id="@+id/rb_illumination"
+        android:layout_width="100dp"
+        android:text="光照"
+        android:textColor="@android:color/white"
+        android:button="@null"
+        android:background="@drawable/selet"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:checked="true"
+        android:layout_height="40dp"/>
+      <RadioButton 
+        android:id="@+id/rb_temp"
+        android:layout_width="100dp"
+        android:text="温度"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+        android:button="@null"
+        android:background="@drawable/selet"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_height="40dp"/>
+      
+</RadioGroup>
+
+
+   <com.example.demog.RingView
+         android:id="@+id/cs_view" 
+         android:layout_marginTop="50dp"
+         android:layout_width="match_parent" 
+         android:layout_height="250dp"/>
+
+</LinearLayout>

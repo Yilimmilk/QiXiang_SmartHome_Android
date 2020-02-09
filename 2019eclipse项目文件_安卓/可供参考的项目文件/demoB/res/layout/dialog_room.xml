@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent" >
+    
+<TextView 
+    android:layout_width="wrap_content"
+    android:text="房间管理"
+    android:textSize="18sp"
+    android:textColor="#1eaee3"
+    android:gravity="center_vertical"
+    android:layout_height="40dp"/>
+<View  
+        android:id="@+id/view1"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#1eaee3"/>
+
+<TextView 
+    android:id="@+id/tv_room"
+    android:layout_width="wrap_content"
+    android:text="房间号："
+    android:layout_marginTop="45dp"
+    android:textSize="15sp"
+   android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content"/>
+
+<TextView 
+    android:id="@+id/illumination_tv"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="65dp"
+    android:layout_marginLeft="20dp"
+    android:text="照度："
+    android:layout_height="wrap_content"/>
+<TextView 
+    android:id="@+id/humidity_tv"
+    android:layout_width="wrap_content"
+      android:layout_marginTop="35dp"
+    android:layout_marginLeft="20dp"
+    android:text="湿度:"
+    android:layout_below="@+id/illumination_tv"
+    android:layout_height="wrap_content"/>
+<TextView 
+    android:id="@+id/temp_tv"
+    android:layout_width="wrap_content"
+        android:layout_marginTop="35dp"
+    android:layout_marginLeft="20dp"
+    android:text="温度:"
+    android:layout_below="@+id/humidity_tv"
+    android:layout_height="wrap_content"/>
+<TextView 
+      android:id="@+id/smoke_tv"
+    android:layout_width="wrap_content"
+         android:layout_marginTop="35dp"
+    android:layout_marginLeft="20dp"
+    android:text="烟雾:"
+    android:layout_below="@+id/temp_tv"
+    android:layout_height="wrap_content"/>
+<TextView 
+      android:id="@+id/pressure_tv"
+    android:layout_width="wrap_content"
+       android:layout_marginTop="35dp"
+    android:layout_marginLeft="20dp"
+    android:text="气压:"
+    android:layout_below="@+id/smoke_tv"
+    android:layout_height="wrap_content"/>
+
+
+
+
+<TextView 
+    android:id="@+id/co2_tv"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="65dp"
+    android:layout_marginRight="20dp"
+    android:text="Co2："
+    android:layout_alignParentRight="true"
+    android:layout_height="wrap_content"/>
+<TextView 
+    android:id="@+id/pm25_tv"
+    android:layout_width="wrap_content"
+      android:layout_marginTop="35dp"
+       android:layout_alignParentRight="true"
+     android:layout_marginRight="20dp"
+    android:text="Pm2.5:"
+    android:layout_below="@+id/co2_tv"
+    android:layout_height="wrap_content"/>
+<TextView 
+    android:id="@+id/gas_tv"
+    android:layout_width="wrap_content"
+        android:layout_marginTop="35dp"
+         android:layout_alignParentRight="true"
+    android:layout_marginRight="20dp"
+    android:text="燃气:"
+    android:layout_below="@+id/pm25_tv"
+    android:layout_height="wrap_content"/>
+<TextView 
+      android:id="@+id/infrared_tv"
+    android:layout_width="wrap_content"
+         android:layout_marginTop="35dp"
+      android:layout_alignParentRight="true"
+    android:layout_marginRight="20dp"
+    android:text="人体红外:无人"
+    android:layout_below="@+id/gas_tv"
+    android:layout_height="wrap_content"/>
+
+<TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:text="状态设定:"
+     android:layout_below="@+id/pressure_tv" />
+ <RadioGroup
+        android:id="@+id/state_rg"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+        android:layout_below="@+id/pressure_tv"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#cccccc"
+            android:button="@null"
+            android:gravity="center"
+            android:text="已入住" />
+
+        <RadioButton
+                android:id="@+id/rb2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#cccccc"
+            android:button="@null"
+            android:gravity="center"
+            android:text="未打扫" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="#cccccc"
+            android:button="@null"
+            android:gravity="center"
+            android:text="未入住" />
+    </RadioGroup>
+    
+ <TextView 
+     android:id="@+id/colse_tv"
+     android:layout_width="match_parent"
+     android:text="关闭"
+     android:layout_marginTop="10dp"
+     android:layout_below="@+id/state_rg"
+     android:gravity="center"
+     android:layout_height="40dp"/>
+</RelativeLayout>

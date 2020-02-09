@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="房号：" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        android:text="报警灯:" />
+
+    <ToggleButton
+        android:id="@+id/tb_alarmlamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:textOff="关闭"
+        android:textOn="开启" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_alarmlamp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="60dp"
+        android:text="射灯:" />
+
+    <ToggleButton
+        android:id="@+id/tb_lamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_alarmlamp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:textOff="关闭"
+        android:textOn="开启" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_lamp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:text="空调:" />
+
+    <Switch
+        android:id="@+id/sw_air"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_lamp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:textOff="关"
+        android:textOn="开" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sw_air"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:text="门禁:" />
+
+    <Switch
+        android:id="@+id/sw_door"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sw_air"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:textOff="开"
+        android:textOn="关" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_toLeftOf="@+id/tb_fan"
+        android:text="风扇:" />
+
+    <ToggleButton
+        android:id="@+id/tb_fan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:textOff="关闭"
+        android:textOn="开启" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_fan"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@+id/sw_tv"
+        android:text="电视机:" />
+
+    <Switch
+        android:id="@+id/sw_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tb_fan"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:textOff="关"
+        android:textOn="开" />
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sw_tv"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_toLeftOf="@+id/sw_dvd"
+        android:text="DVD:" />
+
+    <Switch
+        android:id="@+id/sw_dvd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sw_tv"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="55dp"
+        android:textOff="关"
+        android:textOn="开" />
+    
+    <TextView
+         android:layout_width="wrap_content"
+           android:text="电动窗帘:" 
+             android:layout_marginRight="80dp"
+               android:layout_below="@+id/sw_dvd"
+             android:layout_marginTop="45dp"
+                   android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"/>
+    <Button 
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+           android:layout_below="@+id/sw_dvd"
+             android:layout_marginRight="10dp"
+             android:layout_marginTop="75dp"
+             android:text="停"
+                  android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"/>
+     <Button 
+        android:id="@+id/btn_colse"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@+id/btn_stop"
+           android:layout_below="@+id/sw_dvd"
+             android:layout_marginRight="10dp"
+             android:layout_marginTop="75dp"
+             android:text="关"
+        android:layout_height="wrap_content"/>
+      <Button 
+        android:id="@+id/btn_open"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@+id/btn_colse"
+           android:layout_below="@+id/sw_dvd"
+             android:layout_marginRight="10dp"
+             android:layout_marginTop="75dp"
+             android:text="关"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<LinearLayout 
+    android:layout_width="200dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/shape_login_et"
+    android:layout_height="40dp">
+    <TextView  android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="旧密码："
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"/>
+    <EditText 
+        android:id="@+id/oldepassword_et"
+        android:layout_width="match_parent"  
+        android:textColor="@android:color/white"
+          android:background="@null"
+                android:inputType="textPassword"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="200dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/shape_login_et"
+    android:layout_height="40dp">
+    <TextView  android:layout_width="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="新密 码："
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"/>
+    <EditText 
+          android:id="@+id/password_et"
+        android:layout_width="match_parent"  
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+          android:background="@null"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+
+<Button
+    android:id="@+id/btn_up"
+    android:background="@drawable/shape_login_btn_off"
+     android:layout_marginTop="10dp"
+      android:textColor="@android:color/white"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:text="修改" />
+
+<ImageView 
+    android:id="@+id/iv_out"
+    android:layout_width="wrap_content"
+    android:background="@drawable/ic_7304"
+    android:layout_marginTop="10dp"
+    android:padding="10dp"
+    android:layout_marginRight="20dp"
+    android:layout_gravity="right"
+    android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <TextView
+        android:id="@+id/tv_basic"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:layout_height="wrap_content"
+        android:text="基本" />
+         
+                <TextView
+                    android:id="@+id/tv_linkage"
+                      android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联动" />
+                   <TextView
+                       android:id="@+id/tv_model"
+                         android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模式" />
+                      <TextView
+                          android:id="@+id/tv_draw"
+                            android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绘图" />
+
+
+
+</LinearLayout>

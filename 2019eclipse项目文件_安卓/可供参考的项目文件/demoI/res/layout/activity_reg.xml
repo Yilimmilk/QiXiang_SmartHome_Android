@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj"
+    tools:context=".LoginActivity" >
+
+    <EditText
+        android:id="@+id/zc_yhm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/edt"
+        android:ems="10"
+        android:height="40dp"
+        android:hint="用户名" />
+
+    <EditText
+        android:id="@+id/zc_mm"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/zc_yhm"
+        android:layout_below="@+id/zc_yhm"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/edt"
+        android:ems="10"
+        android:height="40dp"
+        android:hint="密码"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/zc_mm2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/zc_mm"
+        android:layout_below="@+id/zc_mm"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/edt"
+        android:ems="10"
+        android:height="40dp"
+        android:hint="重复密码"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/zc_tc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/zc_mm2"
+        android:layout_below="@+id/zc_mm2"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/edt"
+        android:text="退出" />
+
+    <Button
+        android:id="@+id/zc_zc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/zc_tc"
+        android:layout_alignBottom="@+id/zc_tc"
+        android:layout_alignLeft="@+id/zc_mm2"
+        android:background="@drawable/edt"
+        android:text="注册" />
+
+</RelativeLayout>

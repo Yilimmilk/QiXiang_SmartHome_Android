@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj"
+    tools:context=".LoginActivity" >
+
+    <EditText
+        android:id="@+id/yhm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ip"
+        android:layout_below="@+id/ip"
+       
+        
+        android:ems="10"
+           android:background="@drawable/edt"
+        android:layout_marginTop="15dp"
+        android:height="40dp"
+        android:hint="用户名" />
+
+    <EditText
+        android:id="@+id/MM"
+        android:layout_width="wrap_content"
+        android:inputType="textPassword" 
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/yhm"
+        android:layout_below="@+id/yhm"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edt"
+        
+        android:ems="10"
+        android:height="40dp"
+        android:hint="密码"
+        />
+
+    <Button
+        android:id="@+id/zc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MM"
+        android:layout_below="@+id/MM"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/edt"
+        android:text="注册" />
+
+    <Button
+        android:id="@+id/xgmm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/zc"
+        android:layout_alignBottom="@+id/zc"
+        android:layout_alignRight="@+id/MM"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/edt"
+        android:text="修改密码" />
+
+    <Button
+        android:id="@+id/dl"
+        android:layout_width="wrap_content"
+          android:background="@drawable/edt"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/zc"
+        android:layout_below="@+id/zc"
+        android:layout_marginTop="22dp"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/tc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dl"
+        android:layout_alignBottom="@+id/dl"
+        android:layout_alignLeft="@+id/xgmm"
+        android:background="@drawable/edt"
+        android:text="退出" />
+
+    <EditText
+        android:id="@+id/ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/edt"
+        android:ems="10"
+        android:height="40dp"
+        android:hint="ip地址" />
+
+</RelativeLayout>

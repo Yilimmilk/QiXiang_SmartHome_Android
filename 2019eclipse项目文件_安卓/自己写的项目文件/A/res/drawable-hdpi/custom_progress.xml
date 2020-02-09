@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@id/pg_main">
+        <clip android:gravity="left">
+            <shape>
+                <gradient 
+        			android:startColor="#00FFFF"
+        			android:centerColor="#40E0D0"
+        			android:endColor="#00BFFF"
+                    />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

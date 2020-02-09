@@ -1,0 +1,437 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.3"
+        android:scaleType="fitXY"
+        android:src="@drawable/b1303" />
+
+    <LinearLayout
+        android:id="@+id/rightlayout"
+        android:layout_width="160dp"
+        android:paddingRight="10dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温度"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/wendu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="湿度"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/shidu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="燃气"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/ranqi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="光照度"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/guangzhao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PM2.5"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/PM2.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="气压"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/qiya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="烟雾"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/yanwu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Co2"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/co2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人体红外"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/renti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="无人"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+        <Button 
+            android:id="@+id/shebeizhuangtai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="设备连接状态"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/rightlayout" >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="情景模式"
+            android:textColor="#ffffff"
+        	android:layout_gravity="center_horizontal"
+        	
+            />
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            >
+            
+            <CheckBox 
+                android:id="@+id/lvyoumodel"
+                android:text="旅游模式"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+             <CheckBox 
+                android:id="@+id/wendumodel"
+                android:text="温度模式"
+                android:textColor="#ffffff"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+              <CheckBox 
+                android:id="@+id/anfangmodel"
+                android:text="安防模式"
+                android:textColor="#ffffff"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            >
+            
+            <CheckBox 
+                android:id="@+id/zidingyimodel"
+                android:text="自定义模式"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+             <LinearLayout 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_centerHorizontal="true"
+                 >
+                 <TextView 
+                      android:textColor="#ffffff" 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="当"
+                     />
+                 <Spinner 
+                     android:id="@+id/spiner1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     
+                     />
+                 <Spinner 
+                     android:id="@+id/spiner2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     
+                     />
+                 
+                 <EditText 
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/fazhi"
+                      android:textColor="#ffffff"
+                      android:inputType="number" 
+                     />
+                 <Spinner 
+                     android:id="@+id/spiner3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     
+                     />
+             </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomlayout"
+        android:layout_toLeftOf="@id/rightlayout"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <CheckBox
+                    android:id="@+id/shedeng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:background="@drawable/shedengkai" />
+
+                <CheckBox
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/menjin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:background="@drawable/menjinkai" />
+
+                <CheckBox
+                     android:layout_marginLeft="5dp"
+                    android:id="@+id/fengshan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:background="@drawable/fengshan" />
+
+                <CheckBox
+                     android:layout_marginLeft="5dp"
+                    android:id="@+id/baojingdeng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                  	 android:button="@null"
+                    android:background="@drawable/baojingdeng" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="红外遥控"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/kongtiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="空调" />
+
+                <Button
+                    android:id="@+id/DVD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DVD" />
+
+                <Button
+                    android:id="@+id/dianshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电视" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="窗帘"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/kai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开" />
+
+                <Button
+                    android:id="@+id/ting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="停" />
+
+                <Button
+                    android:id="@+id/guan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

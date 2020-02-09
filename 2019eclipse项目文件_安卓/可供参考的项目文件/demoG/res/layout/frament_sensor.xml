@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp">
+
+     
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_login_et"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温度"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                 android:id="@+id/temp_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#ff0000" />
+        </LinearLayout>
+     
+       <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_login_et"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="湿度"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                    android:id="@+id/humidity_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#ff0000" />
+        </LinearLayout>
+     
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_login_et"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Co2"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                 android:id="@+id/co2_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#ff0000" />
+        </LinearLayout>
+        
+
+        
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal">
+<LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_login_et"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="光照"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                 android:id="@+id/illumination_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#ff0000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_login_et"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="烟雾探测器"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/smoke_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#ff0000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_login_et"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="气压"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/pressure_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#ff0000" />
+        </LinearLayout>
+        
+
+  
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+         android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_login_et"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pm2.5"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                 android:id="@+id/pm25_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#ff0000" />
+        </LinearLayout>
+<LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_login_et"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="燃气"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                  android:id="@+id/gas_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#ff0000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_login_et"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人体红外"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                 android:id="@+id/stateHumanInfrared_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="无人"
+                android:textColor="#ff0000" />
+        </LinearLayout>
+        
+    </LinearLayout>
+</LinearLayout>

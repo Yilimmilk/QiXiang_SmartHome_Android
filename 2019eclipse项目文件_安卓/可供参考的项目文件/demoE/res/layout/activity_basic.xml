@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_5216"
+    android:orientation="horizontal" >
+    
+<RadioGroup 
+    android:id="@+id/rg"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="0dp"
+    android:layout_weight="1">
+    
+    <RadioButton
+        android:id="@+id/pattern"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模式控制："/>
+
+    <Switch
+        android:id="@+id/s_linkage"
+        android:textOff="在家"
+        android:textOn="离家"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <RadioButton
+        android:id="@+id/rb_link"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="联动控制："/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <Spinner 
+            android:id="@+id/sp_sensor"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/sensor"
+            />
+        
+         <Spinner
+             android:id="@+id/sp_condition"
+              android:layout_width="100dp"
+            android:layout_height="wrap_content"
+             android:entries="@array/condition"
+            />
+          <EditText 
+              android:id="@+id/et_value"
+              android:layout_width="100dp"
+              android:layout_height="wrap_content"/>
+          <TextView 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="风扇"/>
+          <Spinner 
+            android:id="@+id/sp_state"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+             android:entries="@array/state"
+            />
+          
+    </LinearLayout>
+    <RadioButton 
+        android:id="@+id/rb_instruct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="指令控制："/>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="设备名："/>
+        <EditText 
+            android:id="@+id/et_device"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"/>
+        
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+            android:layout_marginLeft="150dp"
+            android:text="动作："/>
+        <EditText 
+            android:id="@+id/et_state"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"/>
+        <Button 
+            android:id="@+id/btn_deposit"
+            android:layout_width="wrap_content"
+            android:text="存"
+              android:layout_marginLeft="300dp"
+            android:layout_height="wrap_content"/>
+        
+        
+            <EditText 
+            android:id="@+id/et_num"
+            android:layout_width="100dp"
+              android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"/>
+           <Button
+               android:id="@+id/btn_get"
+                android:layout_width="wrap_content"
+            android:text="取"
+            android:layout_marginTop="50dp"
+              android:layout_marginLeft="220dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RadioGroup>
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="0dp"
+    android:layout_weight="1">
+    <LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+        <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="运行日志："/>
+        <ListView 
+            android:id="@+id/lv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></ListView>
+</LinearLayout>
+   <LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+    <TextView 
+        android:id="@+id/tv_illumination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="光照度绘制："/>
+    <com.example.demoe.PieChart
+        android:id="@+id/pie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

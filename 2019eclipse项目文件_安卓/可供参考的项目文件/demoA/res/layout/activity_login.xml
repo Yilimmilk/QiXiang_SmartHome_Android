@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b1302"
+    tools:context=".LoginActivity" >
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@id/view1"
+        android:background="#cccccc"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:id="@+id/iplayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IP地址:"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/ip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"                
+                android:paddingLeft="5dp"
+                android:text="127.0.0.1" />
+        </LinearLayout>
+        <com.example.a.MyView
+            android:id="@+id/myview"
+        android:layout_width="match_parent"
+   		android:layout_height="60dp"
+        />
+        <Button 
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登陆"
+            
+            android:background="#ffffff"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="124dp"
+        android:text="选择执行条件"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+<RadioGroup 
+    android:id="@+id/rg"
+    android:layout_width="match_parent"
+      android:layout_below="@+id/textView1"
+    android:gravity="center"  
+    android:layout_marginTop="40dp"
+    android:orientation="horizontal"
+     android:layout_height="wrap_content">
+    
+      <RadioButton
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/textView1"
+        android:text="窗帘" />
+
+    <RadioButton
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="报警灯" />
+
+    <RadioButton
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="射灯" />
+    
+     <RadioButton
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="换气扇" />
+</RadioGroup>
+  
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="选择实行条件" />
+
+</RelativeLayout>

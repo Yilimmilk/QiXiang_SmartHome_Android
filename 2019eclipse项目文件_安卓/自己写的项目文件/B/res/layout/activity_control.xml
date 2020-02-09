@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ControlActivity" >
+
+    <TextView
+        android:id="@+id/tv_roomnum_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="房号:0000"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_roomnum_center"
+        android:layout_marginTop="52dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:text="报警灯:"
+            android:textSize="20sp" />
+
+        <ToggleButton
+            android:id="@+id/tgb_baojingdeng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:text="风扇:"
+            android:textSize="20sp" />
+
+        <ToggleButton
+            android:id="@+id/tgb_fengshan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="44dp" >
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:text="射灯:"
+            android:textSize="20sp" />
+
+        <ToggleButton
+            android:id="@+id/tgb_shedeng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:text="电视机:"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_dianshiji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开/关" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="52dp" >
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:text="空调:"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_kongtiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开/关" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:text="DVD:"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_dvd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开/关" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginTop="48dp" >
+
+        <TextView
+            android:id="@+id/TextView003"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:text="门禁:"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_menjin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开/关" />
+
+        <TextView
+            android:id="@+id/TextView004"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:text="电动窗帘:"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_clkai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开" />
+        
+        <Button
+            android:id="@+id/bt_clguan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关" />
+        
+        <Button
+            android:id="@+id/bt_clting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jdtbj"
+    tools:context=".SplashActivity" >
+
+    <TextView
+        android:id="@+id/jdtwz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/jdt"
+        android:layout_below="@+id/jdt"
+        android:layout_marginTop="32dp"
+        android:text="正在连接服务器"
+        android:textColor="#fff"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ProgressBar
+        android:id="@+id/jdt"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="560dp"
+        android:layout_height="20dp"
+        
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:max="100" />
+
+</RelativeLayout>

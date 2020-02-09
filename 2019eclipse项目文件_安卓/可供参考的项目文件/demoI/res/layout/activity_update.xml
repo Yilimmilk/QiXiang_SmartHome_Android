@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj"
+    tools:context=".LoginActivity" >
+
+    <EditText
+        android:id="@+id/up_yhm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/edt"
+        android:ems="10"
+        android:height="40dp"
+        android:hint="用户名" />
+
+    <Button
+        android:id="@+id/up_tc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/up_tj"
+        android:layout_alignBottom="@+id/up_tj"
+        android:layout_alignRight="@+id/up_mm2"
+        android:layout_marginRight="23dp"
+        android:background="@drawable/edt"
+        android:text="退出" />
+
+    <Button
+        android:id="@+id/up_tj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/up_mm2"
+        android:layout_below="@+id/up_mm2"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/edt"
+        android:text="提交" />
+
+    <EditText
+        android:id="@+id/up_mm"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/up_yhm"
+        android:layout_below="@+id/up_yhm"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/edt"
+        android:ems="10"
+        android:height="40dp"
+        android:hint="旧密码"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/up_mm2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/up_mm"
+        android:layout_below="@+id/up_mm"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edt"
+        android:ems="10"
+        android:height="40dp"
+        android:hint="新密码"
+        android:inputType="textPassword" />
+
+</RelativeLayout>

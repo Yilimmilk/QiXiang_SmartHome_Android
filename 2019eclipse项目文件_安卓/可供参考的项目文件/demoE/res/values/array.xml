@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sensor">
+     <item>温度</item>  
+    <item>湿度</item>   
+    </string-array>
+     <string-array name="condition">
+     <item>&#062;</item>  
+     <item>&#060;</item>    
+    </string-array>
+       <string-array name="state">
+     <item>开</item>  
+    <item>关</item>   
+  
+    </string-array>
+    
+</resources>

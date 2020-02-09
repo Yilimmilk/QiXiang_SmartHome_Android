@@ -1,0 +1,754 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing1"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="579dp" >
+
+        <TextView
+            android:id="@+id/textEnvironmentalParameters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textTemp"
+            android:text="@string/textViewEnvironmentalParametersString"
+            android:textColor="#FFFFFF"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/textTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTemp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="23dp"
+            android:text="@string/textViewTempString"
+            android:textColor="#FFFFFF"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/textIllumination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editIllumination"
+            android:layout_alignLeft="@+id/textHumidity"
+            android:text="@string/textViewIlluminationString"
+            android:textColor="#FFFFFF"
+            android:textSize="12pt" />
+
+        <EditText
+            android:id="@+id/EditTextnumb"
+            android:layout_width="80dp"
+            android:layout_height="20pt"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignLeft="@+id/switch_current"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="@string/edittext_numb"
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="0" >
+
+            <requestFocus android:layout_width="wrap_content" />
+        </EditText>
+
+        <Switch
+            android:id="@+id/switch_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textTemp"
+            android:layout_marginLeft="32dp"
+            android:layout_toRightOf="@+id/textView2"
+            android:textOff="反转"
+            android:textOn="正转" />
+
+        <TextView
+            android:id="@+id/textHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editHumidity"
+            android:layout_alignLeft="@+id/textTemp"
+            android:text="@string/textViewHumidityString"
+            android:textColor="#FFFFFF"
+            android:textSize="12pt" />
+
+        <Button
+            android:id="@+id/Button_step_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditText_step"
+            android:layout_alignBottom="@+id/EditText_step"
+            android:layout_toRightOf="@+id/switch_step"
+            android:text="@string/close" />
+
+        <Button
+            android:id="@+id/button_numb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Button_step_stop"
+            android:layout_alignTop="@+id/EditTextnumb"
+            android:text="@string/numb_set" />
+
+        <EditText
+            android:id="@+id/editTemp"
+            android:layout_width="90pt"
+            android:layout_height="20pt"
+            android:layout_below="@+id/textEnvironmentalParameters"
+            android:layout_toRightOf="@+id/textEnvironmentalParameters"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="@string/edittextTempString"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editTemp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="252dp"
+            android:text="@string/controlString"
+            android:textColor="#FFFFFF"
+            android:textSize="12pt" />
+
+        <EditText
+            android:id="@+id/EditText_smoke"
+            android:layout_width="90pt"
+            android:layout_height="20pt"
+            android:layout_alignLeft="@+id/editIllumination"
+            android:layout_below="@+id/editIllumination"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="@string/edittextsmokeString"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/EditText_step"
+            android:layout_width="80dp"
+            android:layout_height="20pt"
+            android:layout_alignLeft="@+id/switch_current"
+            android:layout_below="@+id/textView2"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="@string/edittext_step"
+            android:inputType="number"
+            android:text="0" />
+
+        <CheckBox
+            android:id="@+id/checkBox_led1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditTextnumb"
+            android:layout_alignTop="@+id/TextView05" />
+
+        <TextView
+            android:id="@+id/textSmokeSensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/EditText_smoke"
+            android:layout_alignLeft="@+id/textIllumination"
+            android:text="@string/textViewSmokeString"
+            android:textColor="#FFFFFF"
+            android:textSize="12pt" />
+
+        <EditText
+            android:id="@+id/editIllumination"
+            android:layout_width="90pt"
+            android:layout_height="20pt"
+            android:layout_alignLeft="@+id/editHumidity"
+            android:layout_below="@+id/editHumidity"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="@string/edittextIlluminationString"
+            android:inputType="number" />
+
+        <Switch
+            android:id="@+id/switch_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignLeft="@+id/switch_step" />
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/button_numb"
+            android:layout_marginTop="35dp"
+            android:text="@string/LED"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/EditTextGAS"
+            android:layout_width="90pt"
+            android:layout_height="20pt"
+            android:layout_below="@+id/EditText_smoke"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/textSmokeSensor"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="燃气值"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:text="你好"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:src="@drawable/bt1" />
+
+        <EditText
+            android:id="@+id/editHumidity"
+            android:layout_width="90pt"
+            android:layout_height="20pt"
+            android:layout_alignLeft="@+id/editTemp"
+            android:layout_below="@+id/editTemp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="@string/edittextHumidityString"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/EditTextPM25"
+            android:layout_width="90pt"
+            android:layout_height="20pt"
+            android:layout_alignLeft="@+id/EditTextGAS"
+            android:layout_below="@+id/EditTextGAS"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="PM2.5"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditTextGAS"
+            android:layout_alignBottom="@+id/EditTextGAS"
+            android:layout_alignLeft="@+id/textSmokeSensor"
+            android:text="燃气："
+            android:textColor="#FFFFFF"
+            android:textSize="12pt" />
+
+        <EditText
+            android:id="@+id/EditTextair"
+            android:layout_width="90pt"
+            android:layout_height="20pt"
+            android:layout_alignLeft="@+id/EditTextPM25"
+            android:layout_below="@+id/EditTextPM25"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="气压"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/EditTextCO2"
+            android:layout_width="90pt"
+            android:layout_height="20pt"
+            android:layout_alignLeft="@+id/EditTextair"
+            android:layout_below="@+id/EditTextair"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="CO2"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/EditTextCO2"
+            android:layout_alignRight="@+id/TextView04"
+            android:text="CO2："
+            android:textColor="#FFFFFF"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/TextViewPM25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/EditTextPM25"
+            android:layout_alignLeft="@+id/TextView06"
+            android:text="PM25："
+            android:textColor="#FFFFFF"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/EditTextair"
+            android:layout_alignLeft="@+id/TextView06"
+            android:text="气压："
+            android:textColor="#FFFFFF"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/switch_step"
+            android:layout_alignLeft="@+id/textView1"
+            android:text="@string/step_motor"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/buttonstep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTemp"
+            android:layout_toRightOf="@+id/switch_step"
+            android:text="@string/start" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView04"
+            android:layout_below="@+id/EditTextCO2"
+            android:layout_marginTop="30dp"
+            android:text="@string/man"
+            android:textColor="#FFFFFF"
+            android:textSize="12pt" />
+
+        <EditText
+            android:id="@+id/editTextman"
+            android:layout_width="90pt"
+            android:layout_height="20pt"
+            android:layout_alignLeft="@+id/TextView06"
+            android:layout_below="@+id/TextView02"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="是否有人" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView01"
+            android:layout_below="@+id/button_numb"
+            android:text="@string/current_motor"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/EditTexthelp"
+            android:layout_width="90pt"
+            android:layout_height="20pt"
+            android:layout_alignLeft="@+id/editTextman"
+            android:layout_below="@+id/TextView03"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="是否有求助" />
+
+        <TextView
+            android:id="@+id/TextView08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/EditText_step"
+            android:text="单路继电器："
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <Switch
+            android:id="@+id/SwitchRelaySingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/EditText_step"
+            android:layout_alignTop="@+id/textHumidity" />
+
+        <CheckBox
+            android:id="@+id/CheckBox_relay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textIllumination"
+            android:layout_alignLeft="@+id/SwitchRelaySingle" />
+
+        <CheckBox
+            android:id="@+id/checkBox_led2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/checkBox_led1"
+            android:layout_alignBottom="@+id/checkBox_led1"
+            android:layout_toRightOf="@+id/checkBox_led1" />
+
+        <CheckBox
+            android:id="@+id/checkBox_led3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/checkBox_led2"
+            android:layout_alignBottom="@+id/checkBox_led2"
+            android:layout_toRightOf="@+id/checkBox_led2" />
+
+        <CheckBox
+            android:id="@+id/checkBox_led4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/checkBox_led3"
+            android:layout_alignBottom="@+id/checkBox_led3"
+            android:layout_toRightOf="@+id/checkBox_led3" />
+
+        <Button
+            android:id="@+id/button_led"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView05"
+            android:layout_alignBottom="@+id/TextView05"
+            android:layout_alignParentRight="true"
+            android:text="@string/numb_set" />
+
+        <TextView
+            android:id="@+id/TextView09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/CheckBox_relay1"
+            android:layout_alignLeft="@+id/TextView08"
+            android:text="继电器"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <CheckBox
+            android:id="@+id/CheckBox_relay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/CheckBox_relay1"
+            android:layout_alignBottom="@+id/CheckBox_relay1"
+            android:layout_toRightOf="@+id/CheckBox_relay1" />
+
+        <CheckBox
+            android:id="@+id/CheckBox_relay3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/CheckBox_relay2"
+            android:layout_alignBottom="@+id/CheckBox_relay2"
+            android:layout_toRightOf="@+id/CheckBox_relay2" />
+
+        <CheckBox
+            android:id="@+id/CheckBox_relay4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/CheckBox_relay3"
+            android:layout_alignBottom="@+id/CheckBox_relay3"
+            android:layout_toRightOf="@+id/CheckBox_relay3" />
+
+        <Button
+            android:id="@+id/Button_relay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/CheckBox_relay4"
+            android:layout_alignBottom="@+id/CheckBox_relay4"
+            android:layout_alignParentRight="true"
+            android:text="@string/numb_set" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/editIllumination"
+            android:text="@string/numb_led"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/TextView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/TextView04"
+            android:layout_alignLeft="@+id/TextView05"
+            android:text="摄像头："
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/button_camera"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView10"
+            android:layout_alignBottom="@+id/TextView10"
+            android:layout_alignLeft="@+id/checkBox_led1"
+            android:text="开" />
+
+        <TextView
+            android:id="@+id/TextView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/TextView05"
+            android:layout_alignTop="@+id/EditTextPM25"
+            android:text="蜂鸣器："
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <Switch
+            android:id="@+id/Switch_buzz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/TextView11"
+            android:layout_alignLeft="@+id/button_camera" />
+
+        <TextView
+            android:id="@+id/TextView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TextView07"
+            android:layout_alignLeft="@+id/TextView11"
+            android:text="窗帘："
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/TextView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView12"
+            android:layout_below="@+id/EditTextair"
+            android:text="风扇："
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/TextView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TextView02"
+            android:layout_alignLeft="@+id/TextView13"
+            android:text="射灯："
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <Switch
+            android:id="@+id/Switch_lamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView14"
+            android:layout_alignBottom="@+id/TextView14"
+            android:layout_alignLeft="@+id/Switch_fan" />
+
+        <TextView
+            android:id="@+id/TextView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView14"
+            android:layout_alignTop="@+id/TextView02"
+            android:text="报警灯："
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <Switch
+            android:id="@+id/Switch_warningLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView15"
+            android:layout_alignBottom="@+id/TextView15"
+            android:layout_alignLeft="@+id/Switch_lamp" />
+
+        <TextView
+            android:id="@+id/TextView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_rfid_r"
+            android:layout_alignLeft="@+id/editText_rfid"
+            android:text="RFID读写："
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/editText_rfid"
+            android:layout_width="90pt"
+            android:layout_height="20pt"
+            android:layout_alignLeft="@+id/TextView15"
+            android:layout_below="@+id/TextView03"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="此处为RFID数据" 
+            android:maxLength="9" />
+
+        <TextView
+            android:id="@+id/TextView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextman"
+            android:layout_alignLeft="@+id/TextView15"
+            android:text="红外发射："
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/EditTextchannel"
+            android:layout_width="80dp"
+            android:layout_height="20pt"
+            android:layout_alignLeft="@+id/Switch_warningLight"
+            android:layout_alignTop="@+id/TextView17"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="@string/edittext_numb"
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/Buttonsend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditTextchannel"
+            android:layout_alignBottom="@+id/EditTextchannel"
+            android:layout_toRightOf="@+id/EditTextchannel"
+            android:text="发射" />
+
+        <EditText
+            android:id="@+id/EditTextadd"
+            android:layout_width="80dp"
+            android:layout_height="20pt"
+            android:layout_below="@+id/TextView03"
+            android:layout_toRightOf="@+id/editText_rfid"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="@string/edittext_numb"
+            android:inputType="number"
+            android:maxLength="2"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/button_rfid_r"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditTextadd"
+            android:layout_alignBottom="@+id/EditTextadd"
+            android:layout_toRightOf="@+id/EditTextadd"
+            android:text="读" />
+
+        <Button
+            android:id="@+id/button_rfid_w"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_rfid_r"
+            android:layout_alignBottom="@+id/button_rfid_r"
+            android:layout_toRightOf="@+id/button_rfid_r"
+            android:text="写" />
+
+        <TextView
+            android:id="@+id/TextView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/EditTexthelp"
+            android:layout_toRightOf="@+id/EditTextCO2"
+            android:text="RFID卡号："
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/EditTextrfidcard"
+            android:layout_width="90pt"
+            android:layout_height="20pt"
+            android:layout_alignLeft="@+id/TextView18"
+            android:layout_below="@+id/TextView18"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="此处为RFID卡号" />
+
+        <Button
+            android:id="@+id/button_rfid_wcard"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EditTextrfidcard"
+            android:layout_alignBottom="@+id/EditTextrfidcard"
+            android:layout_toRightOf="@+id/EditTextrfidcard"
+            android:text="读" />
+
+        <Switch
+            android:id="@+id/Switch_fan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Switch_buzz"
+            android:layout_below="@+id/EditTextair" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup_curtain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Switch_fan"
+            android:layout_alignTop="@+id/TextView12"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="开" />
+
+            <RadioButton
+                android:id="@+id/radio_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关" />
+
+            <RadioButton
+                android:id="@+id/radio_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="停" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView02"
+            android:layout_below="@+id/Buttonsend"
+            android:layout_marginTop="112dp"
+            android:text="求助"
+            android:textColor="#FFFFFF"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/TextView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView10"
+            android:layout_below="@+id/Buttonsend"
+            android:layout_marginTop="39dp"
+            android:text="门控制 ："
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <Switch
+            android:id="@+id/Switch_door"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/TextView19"
+            android:layout_alignLeft="@+id/EditTextchannel" />
+
+    </RelativeLayout>
+        
+    </ScrollView>

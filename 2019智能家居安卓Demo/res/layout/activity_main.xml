@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/login_rl"
+        android:layout_width="194dp"
+        android:layout_height="185dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/container" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="167dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/login_logo" />
+
+        <EditText
+            android:id="@+id/username_et"
+            android:layout_width="147dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_et_bg"
+            android:drawableLeft="@drawable/user_icon_pressed"
+            android:drawablePadding="5dp"
+            android:hint="请输入账号"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorPressed"
+            android:textColorHint="@color/colorHint"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/password_et"
+            android:layout_width="147dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/username_et"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/login_et_bg"
+            android:drawableLeft="@drawable/lock_icon_pressed"
+            android:drawablePadding="5dp"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorPressed"
+            android:textColorHint="@color/colorHint"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/ip_et"
+            android:layout_width="147dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/password_et"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/login_et_bg"
+            android:drawableLeft="@drawable/ip"
+            android:drawablePadding="5dp"
+            android:hint="请输入IP"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorPressed"
+            android:textColorHint="@color/colorHint"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/login_tv"
+            android:layout_width="147dp"
+            android:layout_height="25px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/button" />
+    </RelativeLayout>
+
+</RelativeLayout>

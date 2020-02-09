@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_5201"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="端口号：" />
+
+        <EditText
+            android:id="@+id/port_et"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP地址：" />
+
+        <EditText
+              android:id="@+id/ip_et"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll2"
+        android:text="登录" />
+    <SeekBar 
+         android:layout_below="@+id/ll2"
+        android:layout_toRightOf="@+id/login_btn"
+          android:layout_width="160dp"
+             android:progressDrawable="@null"
+             android:max="100"
+             android:layout_marginLeft="10dp"
+             android:maxHeight="48dp"  
+             android:thumb="@drawable/ic_5217"
+             android:background="@drawable/ic_5218"
+             android:layout_height="48dp"/>
+
+</RelativeLayout>

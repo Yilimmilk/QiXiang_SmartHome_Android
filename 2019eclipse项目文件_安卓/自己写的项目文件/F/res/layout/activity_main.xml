@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    tools:context=".MainActivity" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rdb_dianshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电视"
+            android:textColor="#fefefe" />
+
+        <RadioButton
+            android:id="@+id/rdb_dvd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fefefe"
+            android:text="DVD" />
+
+        <RadioButton
+            android:id="@+id/rdb_kongtiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fefefe"
+            android:text="空调" />
+        
+        <RadioButton
+            android:id="@+id/rdb_shedengzuo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fefefe"
+            android:text="射灯左" />
+        
+        <RadioButton
+            android:id="@+id/rdb_shedengyou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fefefe"
+            android:text="射灯右" />
+        
+        <RadioButton
+            android:id="@+id/rdb_chuanglian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fefefe"
+            android:text="窗帘" />
+        
+        <RadioButton
+            android:id="@+id/rdb_menjin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fefefe"
+            android:text="门禁" />
+        
+        <RadioButton
+            android:id="@+id/rdb_fengshan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fefefe"
+            android:text="风扇" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="168dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rdb_kai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="开"
+            android:textColor="#fefefe" />
+
+        <RadioButton
+            android:id="@+id/rdb_guan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关"
+            android:textColor="#fefefe" />
+
+        <RadioButton
+            android:id="@+id/rdb_ting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停"
+            android:textColor="#fefefe" />
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar1"
+        android:layout_alignParentLeft="true"
+        android:textColor="#fefefe"
+        android:textSize="20sp"
+        android:text="100" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar1"
+        android:layout_alignParentRight="true"
+        android:text="200"
+        android:textColor="#fefefe"
+        android:textSize="20sp" />
+
+</RelativeLayout>

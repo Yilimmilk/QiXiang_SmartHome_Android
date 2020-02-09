@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="70dp" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="房号:"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_dialog_fanghao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8101"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="照度:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_guangzhao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="湿度:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_shidu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温度:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_wendu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="烟雾:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_yanwu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="气压:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_qiya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/linearLayout2"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/TextView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CO2:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_co2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/TextView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PM2.5:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_pm25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/TextView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="燃气:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_ranqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:id="@+id/TextView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人体红外:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_renti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无人"
+                android:textSize="20sp" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout2" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="状态设定:" 
+            android:textSize="17sp"/>
+
+        <Button
+            android:id="@+id/bt_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可入住" />
+
+        <Button
+            android:id="@+id/bt_wait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未打扫" />
+
+        <Button
+            android:id="@+id/bt_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已入住" />
+
+    </LinearLayout>
+
+</RelativeLayout>

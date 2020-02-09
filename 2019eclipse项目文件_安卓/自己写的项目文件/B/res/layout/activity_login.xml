@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    tools:context=".LoginActivity" >
+
+    <EditText
+        android:id="@+id/et_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="165dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/ll_swap"
+        android:layout_alignRight="@+id/ll_swap"
+        android:layout_below="@+id/ll_swap"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="登录"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_ip"
+        android:layout_toLeftOf="@+id/et_ip"
+        android:text="IP:"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_swap"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/et_ip"
+        android:layout_centerVertical="true"
+        android:background="@drawable/c"
+        android:orientation="vertical" >
+
+        <SeekBar
+            android:id="@+id/sb_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:minHeight="40dp"
+            android:minWidth="40dp"
+            android:paddingTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:progressDrawable="@drawable/custom_progress"
+            android:thumb="@drawable/a"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

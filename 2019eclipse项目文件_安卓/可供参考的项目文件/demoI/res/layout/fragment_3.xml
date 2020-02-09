@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="96dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/checkBox1"
+        android:text="当"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:entries="@array/data" />
+
+    <Spinner
+        android:id="@+id/Spinner01"
+         android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/spinner1"
+        android:entries="@array/data1" />
+
+    <EditText
+        android:id="@+id/shuzhi"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+         android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/Spinner01"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/shuzhi"
+        android:text="选择执行条件" />
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data">
+        <item >温度</item>
+        <item >光照</item>
+        <item >气压</item>
+        <item >湿度</item>
+    </string-array>
+    
+     <string-array name="data1">
+        <item >大于</item>
+        <item >小于</item>
+       
+    </string-array>
+</resources>

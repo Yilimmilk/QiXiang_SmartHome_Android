@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">B</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_load">LoadActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_control">ControlActivity</string>
+    <string name="title_activity_link">LinkActivity</string>
+    <string name="title_activity_paint">PaintActivity</string>
+
+</resources>

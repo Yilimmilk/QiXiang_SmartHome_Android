@@ -1,0 +1,226 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StateActivity" xmlns:android="http://schemas.android.com/apk/res/android">
+
+ 
+    
+   	<LinearLayout
+   	    android:layout_margin="10dp"
+        android:id="@+id/rightlayout"
+        android:background="@drawable/borderblack"
+        android:layout_width="160dp"
+        android:paddingRight="10dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+          <LinearLayout
+                android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网关"
+                 />
+
+            <TextView
+                android:id="@+id/wangguan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="离线" />
+
+        </LinearLayout>
+  			<LinearLayout
+                android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="烟雾"
+                 />
+
+            <TextView
+                android:id="@+id/yanwu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="在线" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温度"
+                 />
+
+            <TextView
+                android:id="@+id/wendu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="在线"
+                />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="湿度"
+                 />
+
+            <TextView
+                android:id="@+id/shidu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="在线"
+                 />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="燃气"
+                 />
+
+            <TextView
+                android:id="@+id/ranqi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="在线"
+                 />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="光照度"
+                 />
+
+            <TextView
+                android:id="@+id/guangzhao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="在线"
+                 />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PM2.5"
+                />
+
+            <TextView
+                android:id="@+id/PM2.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="在线"
+                 />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="气压"
+                 />
+
+            <TextView
+                android:id="@+id/qiya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="在线"
+                 />
+        </LinearLayout>
+          
+            <LinearLayout
+                android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Co2"
+                />
+
+            <TextView
+                android:id="@+id/co2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="在线"
+                 />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人体红外"
+                />
+
+            <TextView
+                android:id="@+id/renti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="在线"
+                />
+        </LinearLayout>
+        
+    </LinearLayout>
+   <com.example.a.StateView
+       android:layout_toLeftOf="@+id/rightlayout"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    
+        />
+</RelativeLayout>

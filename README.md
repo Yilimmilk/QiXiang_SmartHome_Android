@@ -1,8 +1,8 @@
 # 全国职业院校技能大赛2019智能家居安装与维护项目整理文件
-####非官方！！！仅我个人整理的文件
+#### 非官方！！！仅我个人整理的文件
 
 
-![markdown](http://www.nvsc.com.cn/uploadfile/nvsc/logo2013.gif "chinaskills")
+![chinaskills](http://www.nvsc.com.cn/uploadfile/nvsc/logo2013.gif "chinaskills")
 
 #### 简介
 *我是参加了2019全国职校技能大赛智能家居项目的其中一名选手，最终获得了国赛三等奖的成绩。*

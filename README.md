@@ -83,30 +83,31 @@
 > 登陆连接部分示例代码：
 >
 > ```java
+> //将值放入SpUtil中
 > SpUtils.putValue( this, "Account", mAccountEt.getText().toString() );
-> 	                SpUtils.putValue( this, "Password", mPasswordEt.getText().toString() );
-> 	                SpUtils.putValue( this, "Ip", mIpEt.getText().toString() );
-> 	                //设置账号密码
-> 	                ControlUtils.setUser( mAccountEt.getText().toString(), mPasswordEt.getText().toString(), mIpEt.getText().toString() );
-> 	                //进行socket连接
-> 	                SocketClient.getInstance().creatConnect();
-> 	                //连接回调
-> 	                SocketClient.getInstance().login( new LoginCallback() {
-> 	                    @Override
-> 	                    public void onEvent(final String status) {
-> 	                        runOnUiThread( new Runnable() {
-> 	                            @Override
-> 	                            public void run() {
-> 	                                if (status.equals( ConstantUtil.SUCCESS )) {
-> 	                                    startActivity( new Intent( MainActivity.this, MainActivity.class ) );
-> 	                                    finish();
-> 	                                } else {
-> 	                                    Toast.makeText( MainActivity.this, "失败！", Toast.LENGTH_SHORT ).show();
-> 	                                }
-> 	                            }
-> 	                        } );
-> 	                    }
-> 	                } );
+> SpUtils.putValue( this, "Password", mPasswordEt.getText().toString() );
+> SpUtils.putValue( this, "Ip", mIpEt.getText().toString() );
+> //设置账号密码
+> ControlUtils.setUser( mAccountEt.getText().toString(), mPasswordEt.getText().toString(), mIpEt.getText().toString() );
+> //进行socket连接
+> SocketClient.getInstance().creatConnect();
+> //连接回调
+> SocketClient.getInstance().login( new LoginCallback() {
+> 	@Override
+> 	public void onEvent(final String status) {
+> 			runOnUiThread( new Runnable() {
+> 	    	@Override
+> 	      public void run() {
+> 	      	if (status.equals( ConstantUtil.SUCCESS )) {
+> 	      		startActivity( new Intent( MainActivity.this, MainActivity.class ) );
+> 	          finish();
+> 	        }else {
+> 	        	Toast.makeText( MainActivity.this, "失败！", Toast.LENGTH_SHORT ).show();
+> 	        }
+> 	      }
+> 	    });
+> 	  }
+> 	});
 > ```
 >
 > 备注：在反编译后的库文件中，发现了好几个demo中没有使用到的方法，我感觉其中有一个可能会用到的就是`SocketClient.disConnect();`这个方法，看方法名和代码，作用应该是断开连接.
@@ -117,16 +118,16 @@
 >
 > ```xml
 > <SeekBar
->             android:id="@+id/sb_main"
->             android:layout_width="match_parent"
->             android:layout_height="wrap_content" 
->             android:minHeight="40dp"
->             android:minWidth="40dp"
->             android:paddingTop="15dp"
->             android:layout_marginLeft="5dp"
->             android:layout_marginRight="5dp"
->             android:progressDrawable="@drawable/custom_progress"
->             android:thumb="@drawable/a"/>
+> 	android:id="@+id/sb_main"
+>   android:layout_width="match_parent"
+>   android:layout_height="wrap_content" 
+>   android:minHeight="40dp"
+>   android:minWidth="40dp"
+>   android:paddingTop="15dp"
+>   android:layout_marginLeft="5dp"
+>   android:layout_marginRight="5dp"
+>   android:progressDrawable="@drawable/custom_progress"
+>   android:thumb="@drawable/a"/>
 > ```
 >
 > 
@@ -426,75 +427,74 @@
 > ```java
 > ControlUtils.getData();
 > SocketClient.getInstance().getData(new DataCallback<DeviceBean>() {
+> 	@Override
+> 	public void onResult(final DeviceBean bean) {
+> 		// TODO Auto-generated method stub
+> 		runOnUiThread(new Runnable() {			
 > 			@Override
-> 			public void onResult(final DeviceBean bean) {
+> 			public void run() {
 > 				// TODO Auto-generated method stub
-> 				runOnUiThread(new Runnable() {
-> 					
-> 					@Override
-> 					public void run() {
-> 						// TODO Auto-generated method stub
-> 						if (!TextUtils.isEmpty(bean.getTemperature())) {
-> 							wendu.setText(bean.getTemperature());
-> 						}
-> 						if (!TextUtils.isEmpty(bean.getHumidity())) {
-> 							shidu.setText(bean.getHumidity());
-> 						}
-> 						if (!TextUtils.isEmpty(bean.getGas())) {
-> 							ranqi.setText(bean.getGas());
-> 						}
-> 						if (!TextUtils.isEmpty(bean.getIllumination())) {
-> 							guangzhao.setText(bean.getIllumination());
-> 						}
-> 						if (!TextUtils.isEmpty(bean.getPM25())) {
-> 							pm25.setText(bean.getPM25());
-> 						}
-> 						if (!TextUtils.isEmpty(bean.getAirPressure())) {
-> 							qiya.setText(bean.getAirPressure());
-> 						}
-> 						if (!TextUtils.isEmpty(bean.getSmoke())) {
-> 							yanwu.setText(bean.getSmoke());
-> 						}
-> 						if (!TextUtils.isEmpty(bean.getCo2())) {
-> 							co2.setText(bean.getCo2());
-> 						}
-> 						if (!TextUtils.isEmpty( bean.getStateHumanInfrared() ) && bean.getStateHumanInfrared().equals( ConstantUtil.CLOSE )){
->                             renti.setText( "无人" );
->                         }else{
->                             renti.setText( "有人" );
->                         }
-> 						if (!TextUtils.isEmpty( bean.getLamp() ) && bean.getLamp().equals( ConstantUtil.CLOSE )) {
->                             shedeng.setChecked( false );
->                             shedeng.setBackgroundResource(R.drawable.shedeng);
->                         } else {
->                             shedeng.setChecked( true );
->                             shedeng.setBackgroundResource(R.drawable.shedeng_press);
->                         }
->                         if (!TextUtils.isEmpty( bean.getFan() ) && bean.getFan().equals( ConstantUtil.CLOSE )) {
->                         	fengshan.setChecked( false );
->                         	fengshan.setBackgroundResource(R.drawable.fengshan);
->                         } else {
->                             fengshan.setChecked( true );
->                             fengshan.setBackgroundResource(R.drawable.fengshan_press);
->                         }
->                         if (!TextUtils.isEmpty( bean.getCurtain() ) && bean.getCurtain().equals( ConstantUtil.CHANNEL_3 )) {
->                         	Toast.makeText(MainActivity.this, "窗帘开", Toast.LENGTH_SHORT).show();
->                         } else if (!TextUtils.isEmpty( bean.getCurtain() ) && bean.getCurtain().equals( ConstantUtil.CHANNEL_1 )) {
->                         	Toast.makeText(MainActivity.this, "窗帘停", Toast.LENGTH_SHORT).show();
->                         } else if (!TextUtils.isEmpty( bean.getCurtain() ) && bean.getCurtain().equals( ConstantUtil.CHANNEL_2 )) {
->                         	Toast.makeText(MainActivity.this, "窗帘关", Toast.LENGTH_SHORT).show();
->                         }
->                         if (!TextUtils.isEmpty( bean.getWarningLight() ) && bean.getWarningLight().equals( ConstantUtil.CLOSE )) {
->                             baojing.setChecked( false );
->                             baojing.setBackgroundResource(R.drawable.baojing);
->                         } else {
->                             baojing.setChecked( true );
->                             baojing.setBackgroundResource(R.drawable.baojing_press);
->                         }
-> 					}
-> 				});
+> 				if (!TextUtils.isEmpty(bean.getTemperature())) {
+> 					wendu.setText(bean.getTemperature());
+> 				}
+> 				if (!TextUtils.isEmpty(bean.getHumidity())) {
+> 					shidu.setText(bean.getHumidity());
+> 				}
+> 				if (!TextUtils.isEmpty(bean.getGas())) {
+> 					ranqi.setText(bean.getGas());
+> 				}
+> 				if (!TextUtils.isEmpty(bean.getIllumination())) {
+> 					guangzhao.setText(bean.getIllumination());
+> 				}
+> 				if (!TextUtils.isEmpty(bean.getPM25())) {
+> 					pm25.setText(bean.getPM25());
+> 				}
+> 				if (!TextUtils.isEmpty(bean.getAirPressure())) {
+> 					qiya.setText(bean.getAirPressure());
+> 				}
+> 				if (!TextUtils.isEmpty(bean.getSmoke())) {
+> 					yanwu.setText(bean.getSmoke());
+> 				}
+> 				if (!TextUtils.isEmpty(bean.getCo2())) {
+> 					co2.setText(bean.getCo2());
+> 				}
+> 				if (!TextUtils.isEmpty( bean.getStateHumanInfrared() ) && bean.getStateHumanInfrared().equals( ConstantUtil.CLOSE )){
+> 					renti.setText( "无人" );
+>         }else {
+>           renti.setText( "有人" );
+>         }
+> 				if (!TextUtils.isEmpty( bean.getLamp() ) && bean.getLamp().equals( ConstantUtil.CLOSE )) {
+>           shedeng.setChecked( false );
+>           shedeng.setBackgroundResource(R.drawable.shedeng);
+>         } else {
+>           shedeng.setChecked( true );
+>           shedeng.setBackgroundResource(R.drawable.shedeng_press);
+>         }
+>         if (!TextUtils.isEmpty( bean.getFan() ) && bean.getFan().equals( ConstantUtil.CLOSE )) {
+>           fengshan.setChecked( false );
+>           fengshan.setBackgroundResource(R.drawable.fengshan);
+>         }else {
+>           fengshan.setChecked( true );
+>           fengshan.setBackgroundResource(R.drawable.fengshan_press);
+>         }
+>         if (!TextUtils.isEmpty( bean.getCurtain() ) && bean.getCurtain().equals( ConstantUtil.CHANNEL_3 )) {
+>           Toast.makeText(MainActivity.this, "窗帘开", Toast.LENGTH_SHORT).show();
+>         }else if (!TextUtils.isEmpty( bean.getCurtain() ) && bean.getCurtain().equals( ConstantUtil.CHANNEL_1 )) {
+>           Toast.makeText(MainActivity.this, "窗帘停", Toast.LENGTH_SHORT).show();
+>         }else if (!TextUtils.isEmpty( bean.getCurtain() ) && bean.getCurtain().equals( ConstantUtil.CHANNEL_2 )) {
+>           Toast.makeText(MainActivity.this, "窗帘关", Toast.LENGTH_SHORT).show();
+>         }
+>         if (!TextUtils.isEmpty( bean.getWarningLight() ) && bean.getWarningLight().equals( ConstantUtil.CLOSE )) {
+>           baojing.setChecked( false );
+>           baojing.setBackgroundResource(R.drawable.baojing);
+>         }else {
+>           baojing.setChecked( true );
+>           baojing.setBackgroundResource(R.drawable.baojing_press);
+>         }
 > 			}
 > 		});
+> 	}
+> });
 > ```
 >
 > 这些代码在整个App中一定只能出现一次，不同界面间的数据传输请使用全局变量的方法(java的全部变量可以自行百度)，比如我在“MainActivity”中使用了这些代码获取回调数据，我想在“SecondActivity”中也想使用“MainActivity”中获取到的数据，那就在“MainActivity”中传值给全局变量的类。千万不能重复使用上面的代码，那样会导致每刷新一次数据，界面就会重载一次！

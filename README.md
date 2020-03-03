@@ -58,27 +58,23 @@
 > 进度条加载是个假的，只需要达到加载动画的效果就可以了，要新开一个线程用来计数，在主线程中计数会导致UI界面卡死：
 ```java
 new Thread(new Runnable() {
-			
-			@Override
-			public void run() {
-				// TODO Auto-generated method stub
-				for (int i = 0; i < 101; i++) {
-					
-					Message msg=new Message();
-					msg.what=i;
-					mHandler.sendMessage(msg);
-					
-					mainBar.setProgress(i);
-					
-					try {
-						Thread.sleep(10);
-					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
-				}
+	@Override
+	public void run() {
+	// TODO Auto-generated method stub
+	for (int i = 0; i < 101; i++) {
+		Message msg=new Message();
+		msg.what=i;
+		mHandler.sendMessage(msg);
+		mainBar.setProgress(i);
+		try {
+			Thread.sleep(10);
+			} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 			}
-		}).start();
+		}
+	}
+}).start();
 ```
 
 ## 📖相关说明

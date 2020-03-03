@@ -95,16 +95,16 @@
 > SocketClient.getInstance().login( new LoginCallback() {
 > 	@Override
 > 	public void onEvent(final String status) {
-> 			runOnUiThread( new Runnable() {
+> 		runOnUiThread( new Runnable() {
 > 	    	@Override
-> 	      public void run() {
-> 	      	if (status.equals( ConstantUtil.SUCCESS )) {
-> 	      		startActivity( new Intent( MainActivity.this, MainActivity.class ) );
-> 	          finish();
-> 	        }else {
-> 	        	Toast.makeText( MainActivity.this, "失败！", Toast.LENGTH_SHORT ).show();
-> 	        }
-> 	      }
+> 	        public void run() {
+> 	      		if (status.equals( ConstantUtil.SUCCESS )) {
+> 	      			startActivity( new Intent( MainActivity.this, MainActivity.class));
+> 				finish();
+> 	        	}else {
+> 	        		Toast.makeText( MainActivity.this, "失败！", Toast.LENGTH_SHORT ).show();
+> 	        	}
+> 	      	}
 > 	    });
 > 	  }
 > 	});
@@ -119,15 +119,15 @@
 > ```xml
 > <SeekBar
 > 	android:id="@+id/sb_main"
->   android:layout_width="match_parent"
->   android:layout_height="wrap_content" 
->   android:minHeight="40dp"
->   android:minWidth="40dp"
->   android:paddingTop="15dp"
->   android:layout_marginLeft="5dp"
->   android:layout_marginRight="5dp"
->   android:progressDrawable="@drawable/custom_progress"
->   android:thumb="@drawable/a"/>
+>   	android:layout_width="match_parent"
+>   	android:layout_height="wrap_content" 
+>   	android:minHeight="40dp"
+>   	android:minWidth="40dp"
+>   	android:paddingTop="15dp"
+>   	android:layout_marginLeft="5dp"
+>   	android:layout_marginRight="5dp"
+>   	android:progressDrawable="@drawable/custom_progress"
+>   	android:thumb="@drawable/a"/>
 > ```
 >
 > 
@@ -161,31 +161,30 @@
 >
 > ```java
 > Handler mHandler=new Handler(){
-> 			public void handleMessage(Message msg){
-> 				super.handleMessage(msg);
-> 				//通过其他线程传进来的Message对象，获取其中的msg的值，随后设置UI文本
-> 				loadnum.setText(msg.what+"%");
-> 				//当msg传进来的值到达100时，新建弹窗并设置弹窗按钮监听，跳转到下一个界面。
-> 				switch (msg.what) {
-> 					case 100:
-> 						AlertDialog.Builder dialog=new AlertDialog.Builder(LoadActivity.this);
-> 						dialog.setTitle("加载完毕");
-> 						dialog.setNegativeButton("OK", new OnClickListener() {
-> 							@Override
-> 							public void onClick(DialogInterface dialog, int which) {
-> 								// TODO Auto-generated method stub
-> 								dialog.dismiss();
-> 								startActivity(new Intent(LoadActivity.this,MainActivity.class));
-> 								finish();
-> 							}
-> 						});
-> 						dialog.show();
-> 						break;
-> 					default:
-> 						break;
+> 	public void handleMessage(Message msg){
+> 		super.handleMessage(msg);
+> 		//通过其他线程传进来的Message对象，获取其中的msg的值，随后设置UI文本
+> 		loadnum.setText(msg.what+"%");
+> 		//当msg传进来的值到达100时，新建弹窗并设置弹窗按钮监听，跳转到下一个界面。
+> 		switch (msg.what) {
+> 			case 100:
+> 				AlertDialog.Builder dialog=new AlertDialog.Builder(LoadActivity.this);
+> 				dialog.setTitle("加载完毕");
+> 				dialog.setNegativeButton("OK", new OnClickListener() {
+> 					@Override
+> 					public void onClick(DialogInterface dialog, int which) {
+> 						dialog.dismiss();
+> 						startActivity(new Intent(LoadActivity.this,MainActivity.class));
+> 						finish();
 > 					}
-> 				}
-> 			};
+> 				});
+> 				dialog.show();
+> 				break;
+> 			default:
+> 				break;
+> 		}
+> 	}
+> };
 > ```
 >
 > 
@@ -197,7 +196,7 @@
 > ```java
 > //构造函数，必须得有，dbName为你需要创建的数据库名
 > public DatabaseHelper(Context context, String dbName, CursorFactory factory, int version) {
-> super(context, name, factory, version);
+> 	super(context, name, factory, version);
 > }
 > ```
 >
@@ -206,7 +205,7 @@
 > ```java
 > //可以理解为初始化数据库，使用sql语句创建数据库
 > public void onCreate(SQLiteDatabase db) {
-> db.execSQL("sql语句");
+> 	db.execSQL("sql语句");
 > }
 > ```
 >
@@ -215,7 +214,7 @@
 > ```Java
 > //实现数据库升级方法，可以暂时不用管
 > public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-> 
+> 	
 > }
 > ```
 > 来一段示例代码：MyDatabaseHelper.java
@@ -229,8 +228,8 @@
 > import android.database.sqlite.SQLiteOpenHelper;
 > 
 > public class MyDatabaseHelper extends SQLiteOpenHelper{
-> //创建表UserData_1的sql语句
-> public static final String CREATE_ST_STRING = "CREATE TABLE UserData_1" +
+> 	//创建表UserData_1的sql语句
+> 	public static final String CREATE_ST_STRING = "CREATE TABLE UserData_1" +
 >          "(" +
 >          "_id INTEGER PRIMARY KEY AUTOINCREMENT," +   	//序号，键值，int类型，自增
 >          "userName TEXT," +                  //用户名，text类型
@@ -239,14 +238,14 @@
 >          "curtainStatus INT" +               //窗帘状态，int类型
 >          ")";
 > 
-> //构造方法，可在其他类中调用
+> 	//构造方法，可在其他类中调用
 > 	public MyDatabaseHelper(Context context, String name,CursorFactory factory, int version) {
 > 		super(context, name, factory, version);
 > 	}
 > 
 > 	@Override
 > 	public void onCreate(SQLiteDatabase db) {
->  //执行sql语句
+>  		//执行sql语句
 > 		db.execSQL(CREATE_ST_STRING);
 > 	}
 > 
@@ -406,20 +405,20 @@
 >
 > ```java
 > SocketClient.getInstance().login( new LoginCallback() {
->             @Override
->             public void onEvent(final String status) {
->                 runOnUiThread( new Runnable() {
->                     @Override
->                     public void run() {
->                         if (status.equals( ConstantUtil.SUCCESS  )) {
->                             Toast.makeText( MainActivity.this, "重连成功！", Toast.LENGTH_SHORT ).show();
->                         } else if (status.equals( ConstantUtil.FAILURE  )) {
->                             Toast.makeText( MainActivity.this, "重连失败！", Toast.LENGTH_SHORT ).show();
->                         } else {
->                             Toast.makeText( MainActivity.this, "重连中！", Toast.LENGTH_SHORT ).show();
->                         }
->                     }
->                 } );
+> 	@Override
+>       public void onEvent(final String status) {
+>       	runOnUiThread( new Runnable() {
+>               	@Override
+>                     	public void run() {
+>                       	if (status.equals( ConstantUtil.SUCCESS  )) {
+>                             		Toast.makeText( MainActivity.this, "重连成功！", Toast.LENGTH_SHORT ).show();
+>                         	}else if (status.equals( ConstantUtil.FAILURE  )) {
+>                             		Toast.makeText( MainActivity.this, "重连失败！", Toast.LENGTH_SHORT ).show();
+>                         	}else {
+>                             		Toast.makeText( MainActivity.this, "重连中！", Toast.LENGTH_SHORT ).show();
+>                         	}
+>                     	}
+> 		});
 > ```
 >
 > 这是获取传感器数据回调：
@@ -460,37 +459,37 @@
 > 				}
 > 				if (!TextUtils.isEmpty( bean.getStateHumanInfrared() ) && bean.getStateHumanInfrared().equals( ConstantUtil.CLOSE )){
 > 					renti.setText( "无人" );
->         }else {
->           renti.setText( "有人" );
->         }
+>         			}else {
+>           				renti.setText( "有人" );
+>         			}
 > 				if (!TextUtils.isEmpty( bean.getLamp() ) && bean.getLamp().equals( ConstantUtil.CLOSE )) {
->           shedeng.setChecked( false );
->           shedeng.setBackgroundResource(R.drawable.shedeng);
->         } else {
->           shedeng.setChecked( true );
->           shedeng.setBackgroundResource(R.drawable.shedeng_press);
->         }
->         if (!TextUtils.isEmpty( bean.getFan() ) && bean.getFan().equals( ConstantUtil.CLOSE )) {
->           fengshan.setChecked( false );
->           fengshan.setBackgroundResource(R.drawable.fengshan);
->         }else {
->           fengshan.setChecked( true );
->           fengshan.setBackgroundResource(R.drawable.fengshan_press);
->         }
->         if (!TextUtils.isEmpty( bean.getCurtain() ) && bean.getCurtain().equals( ConstantUtil.CHANNEL_3 )) {
->           Toast.makeText(MainActivity.this, "窗帘开", Toast.LENGTH_SHORT).show();
->         }else if (!TextUtils.isEmpty( bean.getCurtain() ) && bean.getCurtain().equals( ConstantUtil.CHANNEL_1 )) {
->           Toast.makeText(MainActivity.this, "窗帘停", Toast.LENGTH_SHORT).show();
->         }else if (!TextUtils.isEmpty( bean.getCurtain() ) && bean.getCurtain().equals( ConstantUtil.CHANNEL_2 )) {
->           Toast.makeText(MainActivity.this, "窗帘关", Toast.LENGTH_SHORT).show();
->         }
->         if (!TextUtils.isEmpty( bean.getWarningLight() ) && bean.getWarningLight().equals( ConstantUtil.CLOSE )) {
->           baojing.setChecked( false );
->           baojing.setBackgroundResource(R.drawable.baojing);
->         }else {
->           baojing.setChecked( true );
->           baojing.setBackgroundResource(R.drawable.baojing_press);
->         }
+>           				shedeng.setChecked( false );
+>           				shedeng.setBackgroundResource(R.drawable.shedeng);
+>         			}else {
+>           				shedeng.setChecked( true );
+>           				shedeng.setBackgroundResource(R.drawable.shedeng_press);
+>         			}
+>         			if (!TextUtils.isEmpty( bean.getFan() ) && bean.getFan().equals( ConstantUtil.CLOSE )) {
+>           				fengshan.setChecked( false );
+>           				fengshan.setBackgroundResource(R.drawable.fengshan);
+>         			}else {
+>           				fengshan.setChecked( true );
+>           				fengshan.setBackgroundResource(R.drawable.fengshan_press);
+>         			}
+>         			if (!TextUtils.isEmpty( bean.getCurtain() ) && bean.getCurtain().equals( ConstantUtil.CHANNEL_3 )) {
+>           				Toast.makeText(MainActivity.this, "窗帘开", Toast.LENGTH_SHORT).show();
+>         			}else if (!TextUtils.isEmpty( bean.getCurtain() ) && bean.getCurtain().equals( ConstantUtil.CHANNEL_1 )) {
+>           				Toast.makeText(MainActivity.this, "窗帘停", Toast.LENGTH_SHORT).show();
+>         			}else if (!TextUtils.isEmpty( bean.getCurtain() ) && bean.getCurtain().equals( ConstantUtil.CHANNEL_2 )) {
+>           				Toast.makeText(MainActivity.this, "窗帘关", Toast.LENGTH_SHORT).show();
+>         			}
+>         			if (!TextUtils.isEmpty( bean.getWarningLight() ) && bean.getWarningLight().equals( ConstantUtil.CLOSE )) {
+>           				baojing.setChecked( false );
+>           				baojing.setBackgroundResource(R.drawable.baojing);
+>         			}else {
+>           				baojing.setChecked( true );
+>           				baojing.setBackgroundResource(R.drawable.baojing_press);
+>         			}
 > 			}
 > 		});
 > 	}

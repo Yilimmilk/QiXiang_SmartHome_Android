@@ -3,13 +3,13 @@
 </p>
 
 <p align="center">
-	<font size="5" color="#c008000">全国职业院校技能大赛2019智能家居安装与维护项目整理文件</font>
-	<font size="3" color="red">非官方！！！仅我个人整理的文件</font>
+	<strong>全国职业院校技能大赛2019智能家居安装与维护项目整理文件</strong>
+	<strong>非官方！！！仅我个人整理的文件</strong>
 </p>
 
 <p align="center">
 	<a target="_blank" href="https://github.com/Yilimmilk/QiXiang_SmartHome_Android/blob/master/LICENSE">
-		<img src="https://img.shields.io/github/license/Yilimmilk/QiXiang_SmartHome_Android?style=for-the-badge&colorB=yellow" ></img>
+		<img src="https://img.shields.io/apm/l/vim-mode.svg?style=for-the-badge&colorB=yellow" ></img>
 	</a>
 	<a target="_blank" href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">
 		<img src="https://img.shields.io/badge/JDK-1.8-green.svg?style=for-the-badge" ></img>
@@ -52,6 +52,6 @@ Email: miaococoo@gmail.com
 
 | QQ：2510355993  | 
 | :--------:   |
-| <img src="other_src/qr_qq.jpg" alt="qq：qr" width="260px" />  | 
+| <img src="https://raw.githubusercontent.com/Yilimmilk/QiXiang_SmartHome_Android/master/other_src/qr_qq.jpg" alt="qq：qr" width="260px" />  | 
 
 #### 好了，也再没有什么好说的了，希望这个repo可以被用上吧，最后祝以后参加这个比赛的同学可以取得一个理想的成绩咯，干巴爹！

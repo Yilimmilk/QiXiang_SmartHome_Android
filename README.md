@@ -9,16 +9,22 @@
 
 <p align="center">
 	<a target="_blank" href="https://github.com/Yilimmilk/QiXiang_SmartHome_Android/blob/master/LICENSE">
-		<img src="https://img.shields.io/apm/l/vim-mode.svg?style=for-the-badge&colorB=yellow" ></img>
+		<img src="https://img.shields.io/github/license/Yilimmilk/QiXiang_SmartHome_Android?colorB=yellow" ></img>
 	</a>
 	<a target="_blank" href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">
-		<img src="https://img.shields.io/badge/JDK-1.8-green.svg?style=for-the-badge" ></img>
+		<img src="https://img.shields.io/badge/JDK-1.8-green.svg" ></img>
 	</a>
 	<a target="_blank" href='https://github.com/Yilimmilk/QiXiang_SmartHome_Android'>
-		<img src="https://img.shields.io/github/repo-size/Yilimmilk/QiXiang_SmartHome_Android?style=for-the-badge&colorB=red" alt="repo size"></img>
+		<img src="https://img.shields.io/github/repo-size/Yilimmilk/QiXiang_SmartHome_Android?colorB=red" alt="repo size"></img>
 	</a>
 	<a target="_blank" href='https://github.com/Yilimmilk/QiXiang_SmartHome_Android'>
-		<img src="https://img.shields.io/github/stars/Yilimmilk/QiXiang_SmartHome_Android?style=for-the-badge" alt="github star"></img>
+		<img src="https://img.shields.io/github/last-commit/Yilimmilk/QiXiang_SmartHome_Android" alt="last commit"></img>
+	</a>
+	<a target="_blank" href='https://github.com/Yilimmilk/QiXiang_SmartHome_Android'>
+		<img src="https://img.shields.io/github/stars/Yilimmilk/QiXiang_SmartHome_Android" alt="github star"></img>
+	</a>
+	<a target="_blank" href='https://github.com/Yilimmilk/QiXiang_SmartHome_Android'>
+		<img src="https://img.shields.io/github/forks/Yilimmilk/QiXiang_SmartHome_Android" alt="github fork"></img>
 	</a>
 </p>
 

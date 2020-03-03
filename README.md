@@ -1,10 +1,10 @@
+# 全国职业院校技能大赛2019智能家居安装与维护项目整理文件
 <p align="center">
 	<a href="http://www.chinaskills-jsw.org/"><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3275224511,3035196832&fm=26&gp=0.jpg" width="200"></a>
 </p>
 
 <p align="center">
-	<strong>全国职业院校技能大赛2019智能家居安装与维护项目整理文件</strong>
-	<strong>非官方！！！仅我个人整理的文件</strong>
+	<strong>非官方,仅我个人整理的文件!!!</strong>
 </p>
 
 <p align="center">

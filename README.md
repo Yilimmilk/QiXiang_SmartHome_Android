@@ -28,16 +28,60 @@
 	</a>
 </p>
 
-#### 简介
+## 📝简介
 - 我是参加了2019全国职校技能大赛智能家居项目的其中一名选手，最终获得了国赛三等奖的成绩。
-- 这个repo是我整理的所有我在比赛前的文件，包括题库，说明文档，企想提供的Demo项目文件，我自己写的项目以及我参考过的项目，还有2017届的题目，题库以及Demo。
+- 这个repo是我整理的所有我用到的文件，包括题库，说明文档，企想提供的Demo项目文件，我自己写的项目以及我参考过的项目，还有2017届的题目，题库以及Demo。
+- 2019年抽取的是[E卷](https://github.com/Yilimmilk/QiXiang_SmartHome/blob/master/2019%E9%A2%98%E5%BA%93/E%E5%8D%B7.docx?raw=true)作为最终试题。
 - 由于现在高三，准备参加技能高考了，所以可能这个repo整理的有点仓促，但是该写的我都写了，应该还是能看的。
 
+## ✏️部分重要代码
+> <u>千万不要太过于在意代码规范，毕竟就三个小时，时间会不够用的！(除非你觉得还有多的时间)</u>
+> <u>比赛中，部分重要代码记得写注释，听说可以加分。</u>
 
-#### 部分重要代码
+- 滑动验证
+> 部分题目中要求滑动验证，可以直接使用SeekBar，通过设置`android:progressDrawable`属性来设置背景资源，通过`android:thumb`属性来设置拖动滑块的资源；甚至还有一套题需要滑动拼图验证，也可以使用这种方法，通过`android:padding`来设置内边距，就可以让滑块到指定的位置，例子：
+```xml
+         <SeekBar
+            android:id="@+id/sb_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:minHeight="40dp"
+            android:minWidth="40dp"
+            android:paddingTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:progressDrawable="@drawable/custom_progress"
+            android:thumb="@drawable/a"/>
+```
 
+- 进度条加载
+> 进度条加载是个假的，只需要达到加载动画的效果就可以了，要新开一个线程用来计数，在主线程中计数会导致UI界面卡死：
+```java
+new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				for (int i = 0; i < 101; i++) {
+					
+					Message msg=new Message();
+					msg.what=i;
+					mHandler.sendMessage(msg);
+					
+					mainBar.setProgress(i);
+					
+					try {
+						Thread.sleep(10);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+			}
+		}).start();
+```
 
-#### 相关说明
+## 📖相关说明
 
 + 在这两个目录下：【[2017年智能家居安卓Demo](https://github.com/Yilimmilk/QiXiang_SmartHome/tree/master/2017%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E5%AE%89%E5%8D%93Demo "2017年智能家居Demo")，[2019年智能家居安卓Demo](https://github.com/Yilimmilk/QiXiang_SmartHome/tree/master/2019%E6%99%BA%E8%83%BD%E5%AE%B6%E5%B1%85%E5%AE%89%E5%8D%93Demo "2019年智能家居Demo")】是企想提供的安卓Demo文件，提供最基础的智能家居控制功能，可直接导入eclipse。
 
@@ -52,7 +96,7 @@
 
 + [其他文件](https://github.com/Yilimmilk/QiXiang_SmartHome/tree/master/%E5%85%B6%E4%BB%96%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6)这个是其他的一些文件，比如说明文档啥的，还有lib库文件。
 
-# 联系方式
+## 📱联系方式
 
 Email: miaococoo@gmail.com
 
@@ -60,4 +104,5 @@ Email: miaococoo@gmail.com
 | :--------:   |
 | <img src="https://raw.githubusercontent.com/Yilimmilk/QiXiang_SmartHome_Android/master/other_src/qr_qq.jpg" alt="qq：qr" width="260px" />  | 
 
-#### 好了，也再没有什么好说的了，希望这个repo可以被用上吧，最后祝以后参加这个比赛的同学可以取得一个理想的成绩咯，干巴爹！
+## 🔔最后
+*好了，也再没有什么好说的了，希望这个repo可以被用上吧，最后祝以后参加这个比赛的同学可以取得一个理想的成绩咯，干巴爹！*

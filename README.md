@@ -1,13 +1,35 @@
-# 全国职业院校技能大赛2019智能家居安装与维护项目整理文件
-#### 非官方！！！仅我个人整理的文件
+<p align="center">
+	<a href="http://www.chinaskills-jsw.org/"><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3275224511,3035196832&fm=26&gp=0.jpg" width="200"></a>
+</p>
 
+<p align="center">
+	<font size="5" color="#c008000">全国职业院校技能大赛2019智能家居安装与维护项目整理文件</font>
+	<font size="3" color="red">非官方！！！仅我个人整理的文件</font>
+</p>
 
-![chinaskills](http://www.nvsc.com.cn/uploadfile/nvsc/logo2013.gif "chinaskills")
+<p align="center">
+	<a target="_blank" href="https://github.com/Yilimmilk/QiXiang_SmartHome_Android/blob/master/LICENSE">
+		<img src="https://img.shields.io/apm/l/vim-mode.svg?style=for-the-badge&colorB=yellow" ></img>
+	</a>
+	<a target="_blank" href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">
+		<img src="https://img.shields.io/badge/JDK-1.8-green.svg?style=for-the-badge" ></img>
+	</a>
+	<a target="_blank" href='https://github.com/Yilimmilk/QiXiang_SmartHome_Android'>
+		<img src="https://img.shields.io/github/repo-size/Yilimmilk/QiXiang_SmartHome_Android?style=for-the-badge&colorB=red" alt="repo size"></img>
+	</a>
+	<a target="_blank" href='https://github.com/Yilimmilk/QiXiang_SmartHome_Android'>
+		<img src="https://img.shields.io/github/stars/Yilimmilk/QiXiang_SmartHome_Android?style=for-the-badge" alt="github star"></img>
+	</a>
+</p>
 
 #### 简介
-*我是参加了2019全国职校技能大赛智能家居项目的其中一名选手，最终获得了国赛三等奖的成绩。*
-*这个项目是我整理的所有我在比赛前的文件，包括题库，说明文档，企想提供的Demo项目文件，我自己写的项目以及我参考过的项目，还有2017届的题目，题库以及Demo。*
-*由于现在高三，准备参加技能高考了，所以可能这个repo整理的有点仓促，但是该写的我都写了，以后再整理吧。*
+- 我是参加了2019全国职校技能大赛智能家居项目的其中一名选手，最终获得了国赛三等奖的成绩。
+- 这个repo是我整理的所有我在比赛前的文件，包括题库，说明文档，企想提供的Demo项目文件，我自己写的项目以及我参考过的项目，还有2017届的题目，题库以及Demo。
+- 由于现在高三，准备参加技能高考了，所以可能这个repo整理的有点仓促，但是该写的我都写了，应该还是能看的。
+
+
+#### 部分重要代码
+
 
 #### 相关说明
 
@@ -24,4 +46,12 @@
 
 + [其他文件](https://github.com/Yilimmilk/QiXiang_SmartHome/tree/master/%E5%85%B6%E4%BB%96%E7%9B%B8%E5%85%B3%E6%96%87%E4%BB%B6)这个是其他的一些文件，比如说明文档啥的，还有lib库文件。
 
-##### 好了，也再没有什么好说的了，希望这个repo可以被用上吧，最后祝以后参加这个比赛的同学可以取得一个理想的成绩咯，干巴爹！
+# 联系方式
+
+Email: miaococoo@gmail.com
+
+| QQ：2510355993  | 
+| :--------:   |
+| <img src="other_src/qr_qq.jpg" alt="qq：qr" width="260px" />  | 
+
+#### 好了，也再没有什么好说的了，希望这个repo可以被用上吧，最后祝以后参加这个比赛的同学可以取得一个理想的成绩咯，干巴爹！

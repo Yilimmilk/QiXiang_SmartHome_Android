@@ -118,7 +118,7 @@
 >
 > ```xml
 > <SeekBar
-> 	android:id="@+id/sb_main"
+> 	android:id="@+id/sb_load"
 >   	android:layout_width="match_parent"
 >   	android:layout_height="wrap_content" 
 >   	android:minHeight="40dp"
